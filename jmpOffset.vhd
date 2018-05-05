@@ -7,7 +7,7 @@ GENERIC ( n : integer := 16);
         PORT (IRBuff: IN std_logic_vector(n-1 DOWNTO 0);
         flagReg : IN std_logic_vector(3 DOWNTO 0);
         delayJMPDE,clk,rstHard:in std_logic;
-        offsetSel,jmpCondReg : OUT std_logic);    
+        offsetSel,jmpCondDelayedReg : OUT std_logic);    
 END ENTITY jmpOffset;
 
 
@@ -15,12 +15,12 @@ ARCHITECTURE offset OF jmpOffset IS
 
 
 component my_DFF IS
-     PORT( d,clk,rst,en : IN std_logic;   q : OUT std_logic);
+     PORT(clk,rst,en,d : IN std_logic;   q : OUT std_logic);
 END component;
 
-signal jmpCond,jmpCondRegsig,jmpCondRegRst,jmpCondToReg :std_logic;
+signal jmpCond,jmpCondRegsig,jmpCondRegRst,jmpCondToReg,jmpCondDelayedRegRst,jmpCondReg,jmpCondDelayedRegsig :std_logic;
 
-constant jzOp :std_logic_vector(6 downto 0):= "0000000";
+constant jzOp :std_logic_vector(6 downto 0):= "0000110";  -- feryal opcode kan 000000
 constant jnOp :std_logic_vector(6 downto 0):= "0000001";
 constant jcOp :std_logic_vector(6 downto 0):= "0000010";
 
@@ -35,8 +35,10 @@ BEGIN
     jmpCondToReg<=jmpCond or delayJMPDE;
     offsetSel<=jmpCond or delayJMPDE;
     jmpCondReg<=jmpCondRegsig;
-    jmpCondRegRst<=(jmpCondRegsig and ( clk))or rstHard;
-    condJMP: my_DFF port map(jmpCondToReg,clk,jmpCondRegRst,'1',jmpCondRegsig); --make sure of enable
+    jmpCondDelayedRegRst<=(jmpCondDelayedRegsig and ( clk))or rstHard;
+    condJMP: my_DFF port map(clk,rstHard,'1',jmpCondToReg,jmpCondRegsig); --make sure of enable
+    condJMP_delayed : my_DFF port map(clk,jmpCondDelayedRegRst,'1',jmpCondRegsig,jmpCondDelayedRegsig);
+    jmpCondDelayedReg<= jmpCondDelayedRegsig;
     
 
 

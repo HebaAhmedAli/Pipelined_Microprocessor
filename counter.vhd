@@ -15,7 +15,7 @@ begin
   z<= std_logic_vector(zint);             
   process (clk)
   begin
-    if rising_edge(clk) then              
+    if falling_edge(clk) then              
       if rst ='1' then                   
         zint <= "00" ;                  
      -- elsif zint = "11" then 

@@ -17,7 +17,7 @@ ARCHITECTURE circuitINT OF intCircuit IS
 
 
 component my_DFF IS
-     PORT( d,clk,rst,en : IN std_logic;   q : OUT std_logic);
+     PORT(clk,rst,en,d : IN std_logic;   q : OUT std_logic);
 END component;
 
 component my_nDFF IS

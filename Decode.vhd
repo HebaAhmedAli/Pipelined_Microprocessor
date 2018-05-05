@@ -24,8 +24,20 @@ entity Decode IS
 		Rsrc_out_RegFile,Rdst_out_RegFile	: out std_logic_vector(m-1 downto 0 );
 		Rsrc_buff_ID_IE , Rdst_buff_ID_IE , IR_Immediate_ID_IE ,PC_Call_ID_IE,ReadinFetch_dataBus: out std_logic_vector(m-1 downto 0 );
 		Rsrc_add_ID_IE,Rdst_add_ID_IE: out std_logic_vector (2 downto 0);
-		Imm_buff_ID_IE: out std_logic
-		);
+		Imm_buff_ID_IE: out std_logic;
+	------------------------- feryal ----- added signal form FU delay_JMP----------------------
+		delay_JMP_fu : in std_logic;
+		delay_JMP_ID_IE: out std_logic;
+		IN_OR_LDM_cu,LDM_cu: in std_logic;
+		IN_OR_LDM_ID_IE,LDM_ID_IE: out std_logic;
+		writeEnrDst_ecxept_LDM_IN_cu : in std_logic;
+		writeEnrDst_ecxept_LDM_IN_DE : out std_logic;
+		selOffsetPc : in std_logic;
+		selOffsetPc_ID_IE : out std_logic;
+		RTI_cu,RET_cu : in std_logic;
+		RTI_ID_IE,RET_ID_IE : out std_logic
+		
+	);
 END Decode;
 
 
@@ -48,7 +60,11 @@ END component ;
 
 
 component my_DFF IS
-     PORT( d,clk,rst,en : IN std_logic;   q : OUT std_logic);
+     PORT(clk,rst,en,d : IN std_logic;   q : OUT std_logic);
+end component;
+
+component my_DFF_rise IS
+     PORT( clk,rst,en,d: IN std_logic;   q : OUT std_logic);
 end component;
 
 component  my_dec8 IS
@@ -90,6 +106,10 @@ signal sel_mux_data_ExcH_muxR0,sel_mux_data_ExcH_muxR1,sel_mux_data_ExcH_muxR2,s
 signal JMP_cond_OR_Stall_LD : std_logic;
 signal Rsrc_add,Rdst_add:  std_logic_vector (2 downto 0);
 
+------------------------ feryal --------------------------
+
+signal imm_buff_rst,Imm_buff_ID_IE_temp: std_logic;
+----------------------------
 begin 
 
 
@@ -168,9 +188,11 @@ sel_mux_data_ExcH_muxR4<=out_dec_write_Rsrc(4) and  write_en_Rsrc_IM_IW;
 sel_mux_data_ExcH_muxR5<=out_dec_write_Rsrc(5) and  write_en_Rsrc_IM_IW;
 
 -- ID_IE
+------------------ feryal ------------------------
+Imm_buff_ID_IE <= Imm_buff_ID_IE_temp;
+imm_buff_rst <= rst or (Imm_buff_ID_IE_temp and clk);
 
-
-R1_Imm_buff : my_DFF port map (clk,rst,'1',Imm_control_signal,Imm_buff_ID_IE);
+R1_Imm_buff : my_DFF port map (clk,imm_buff_rst,'1',Imm_control_signal,Imm_buff_ID_IE_temp);
 
 R2_Rsrc_buff : my_nDFF_fall generic map (n=>16 ) port map (clk,JMP_cond_OR_Stall_LD,'1',Rsrc_Buff_in,Rsrc_buff_ID_IE );
 
@@ -181,7 +203,7 @@ R4_Rsrc_add : my_nDFF_fall generic map (n=>3 ) port map (clk,rst,'1',Rsrc_add,Rs
 R5_Rdst_add : my_nDFF_fall generic map (n=>3 ) port map (clk,rst,'1',Rdst_add,Rdst_add_ID_IE);
 
 
-R6_IR_immediate : my_nDFF generic map (n=>16 ) port map (clk,JMP_cond_OR_Stall_LD,'1',IR,IR_Immediate_ID_IE);
+R6_IR_immediate : my_nDFF_fall generic map (n=>16 ) port map (clk,JMP_cond_OR_Stall_LD,'1',IR,IR_Immediate_ID_IE);
 
 R7_PC_Call : my_nDFF generic map (n=>16 ) port map (clk,JMP_cond_OR_Stall_LD,'1',PC_Call,PC_Call_ID_IE);
 
@@ -208,7 +230,13 @@ R_en_mem_write : my_DFF port map (clk,rst,'1',en_mem_write,en_mem_write_ID_IE);
 R_out_en_re : my_DFF port map (clk,rst,'1',out_en_reg,out_en_reg_ID_IE);
 R_S1_WB : my_DFF port map (clk,rst,'1',S1_WB,S1_WB_ID_IE);
 R_S0_WB: my_DFF port map (clk,rst,'1',S0_WB,S0_WB_ID_IE);
-	
+R_delay_JMP: my_DFF port map (clk,rst,'1',delay_JMP_fu,delay_JMP_ID_IE);
+R_LDM: my_DFF port map (clk,rst,'1',LDM_cu,LDM_ID_IE);
+R_IN_OR_LDM: my_DFF port map (clk,rst,'1',IN_OR_LDM_cu,IN_OR_LDM_ID_IE);
+R_writeEnRdst_except_LDM_IN: my_DFF port map (clk,rst,'1',writeEnrDst_ecxept_LDM_IN_cu,writeEnrDst_ecxept_LDM_IN_DE);
+R_selOffsetPc : my_DFF port map (clk,rst,'1',selOffsetPc,selOffsetPc_ID_IE);
+R_RET : my_DFF port map (clk,rst,'1',RET_cu,RET_ID_IE);
+R_RTI : my_DFF port map (clk,rst,'1',RTI_cu,RTI_ID_IE);	
 		
 	
 		

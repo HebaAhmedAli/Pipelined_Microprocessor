@@ -11,7 +11,7 @@ PORT ( Clk,RESET,mem_read_in,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_
 	
 	Rdst_buf_in,Rsrc_buf_in,immediate_val_in: in std_logic_vector(n-1 downto 0); --pass it also 
 	ALU_op_ctrl: in std_logic_vector (3 downto 0); --pass immediate_val also
-
+	flags_reg : out std_logic_vector (3 downto 0);
 	-------------------------------------------------------------
 
 	--pass these control signals 
@@ -32,7 +32,9 @@ PORT ( Clk,RESET,mem_read_in,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_
 
 	
 	execute_result_H_IE_IM,execute_result_L_IE_IM : out std_logic_vector(n-1 downto 0);
-	flags_IE_IM: out std_logic_vector (3 downto 0)
+	flags_IE_IM: out std_logic_vector (3 downto 0);
+	RTI_ID_IE,RET_ID_IE : in std_logic;
+	RTI_IE_IM,RET_IE_IM : out std_logic
 
 	
 
@@ -45,7 +47,7 @@ architecture execute_arch of execute is
 component alu_with_flags is 
 generic ( n : integer := 16);  
 
-PORT ( Clk,RESET,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_buf_sig: in std_logic;
+PORT ( Clk,RESET,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_buf_sig,en_Exec_Res: in std_logic;
 
 	Rdst_buf,Rsrc_buf: in std_logic_vector(n-1 downto 0);
 	ALU_op_ctrl,immediate_val: in std_logic_vector (3 downto 0);
@@ -80,18 +82,20 @@ signal	flags,immediate_val_4bits: std_logic_vector (3 downto 0);
 
 begin
 immediate_val_4bits <= immediate_val_in(3 downto 0);
-alu_module: alu_with_flags generic map (n=>16) port map (Clk,RESET,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_buf_sig,Rdst_buf_in,Rsrc_buf_in,ALU_op_ctrl,immediate_val_4bits,execute_result_H,execute_result_L,flags);
+alu_module: alu_with_flags generic map (n=>16) port map (Clk,RESET,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_buf_sig,en_exec_result_sig,Rdst_buf_in,Rsrc_buf_in,ALU_op_ctrl,immediate_val_4bits,execute_result_H,execute_result_L,flags);
 
 IE_IM_exec_res_H: my_nDFF generic map (n=>16) port map (Clk,RESET,en_exec_result_sig,execute_result_H,execute_result_H_IE_IM);
 IE_IM_exec_res_L: my_nDFF generic map (n=>16) port map (Clk,RESET,en_exec_result_sig,execute_result_L,execute_result_L_IE_IM);
 
-IE_IM_Rdst_add: my_nDFF generic map (n=>3) port map (Clk,RESET,'1',Rdst_add_in,Rdst_add_IE_IM);
-IE_IM_Rsrc_add: my_nDFF generic map (n=>3) port map (Clk,RESET,'1',Rsrc_add_in,Rsrc_add_IE_IM);
+IE_IM_Rdst_add: my_nDFF_fall generic map (n=>3) port map (Clk,RESET,'1',Rdst_add_in,Rdst_add_IE_IM);
+IE_IM_Rsrc_add: my_nDFF_fall generic map (n=>3) port map (Clk,RESET,'1', Rsrc_add_in,Rsrc_add_IE_IM);
 IE_IM_Rdst_buf: my_nDFF generic map (n=>16) port map (Clk,RESET,'1',Rdst_buf_in,Rdst_buf_IE_IM);
 IE_IM_Rsrc_buf: my_nDFF generic map (n=>16) port map (Clk,RESET,'1',Rsrc_buf_in,Rsrc_buf_IE_IM);
 
 IE_IM_immediate: my_nDFF generic map (n=>16) port map (Clk,RESET,'1',immediate_val_in,immediate_val_IE_IM);
 IE_IM_PC_call : my_nDFF generic map (n=>16) port map (Clk,RESET,'1',PC_call_in,PC_call_IE_IM);
+
+flags_reg <= flags;
 IE_IM_flags: my_nDFF generic map (n=>4) port map (Clk,RESET,'1',flags,flags_IE_IM);
 
 
@@ -110,7 +114,8 @@ control_sig10: my_DFF generic map (n=>1) port map (Clk,RESET,'1',S0_WB_in,S0_WB_
 control_sig11: my_DFF generic map (n=>1) port map (Clk,RESET,'1',STD_sig,STD_IE_IM);
 control_sig12: my_DFF generic map (n=>1) port map (Clk,RESET,'1',PUSH_sig,PUSH_IE_IM);
 control_sig13: my_DFF generic map (n=>1) port map (Clk,RESET,'1',rtype_ID_IE,rtype_IE_IM);
-
+R_RET : my_DFF port map (Clk,RESET,'1',RET_ID_IE,RET_IE_IM);
+R_RTI : my_DFF port map (Clk,RESET,'1',RTI_ID_IE,RTI_IE_IM);	
 
 
 

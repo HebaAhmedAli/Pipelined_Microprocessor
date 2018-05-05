@@ -80,14 +80,15 @@ begin
 	u6: mux2_1 generic map (n => 32) port map (result_a_b_mux,result_c_mul_mux,ALU_op(3),ALU_out);
 
 	cout <= xcout_a when ALU_op(3)='0' and ALU_op(2)='0'
-	else xcout_c when ALU_op(3)='1' and ALU_op(2)='0'
-	else '0';
+	else xcout_c when ALU_op(3)='1' and ALU_op(2)='0';
+	--else '0';
 
-	overflow <= xoverflow when ALU_op(3)='0' and ALU_op(2)='0'
-	else '0';
+	overflow <= xoverflow when ALU_op(3)='0' and ALU_op(2)='0';
+	--else '0';
 	
 	neg <= x_neg_a when ALU_op(3)='0' and ALU_op(2)='0'
-	else x_neg_mul when ALU_op(3)='1' and ALU_op(2)='1'
-	else '0';
+	else x_neg_mul when ALU_op(3)='1' and ALU_op(2)='1';
+	--else '0';
+	-- latck=h 34an m8yar4 el value elly fel flag
 
 end  alu_integ_arch;

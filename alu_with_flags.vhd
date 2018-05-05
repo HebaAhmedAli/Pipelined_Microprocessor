@@ -6,7 +6,7 @@ use ieee.std_logic_unsigned.all;
 entity alu_with_flags is
 generic ( n : integer := 16);  
 
-PORT ( Clk,RESET,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_buf_sig: in std_logic;
+PORT ( Clk,RESET,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_buf_sig,en_Exec_Res: in std_logic;
 
 	Rdst_buf,Rsrc_buf: in std_logic_vector(n-1 downto 0);
 	ALU_op_ctrl,immediate_val: in std_logic_vector (3 downto 0);
@@ -91,7 +91,9 @@ zero_flag_alu <= '1' when ALU_out = zero_compare
 mux_alu_flagBuf_zero: mux_2x1_1_bit generic map (n=>1) port map (zero_flag_alu,flags_out_buf(3),RTI_sig,flags_in(3));
 
 
-flag:  my_nDFF generic map (n=>4) port map (Clk,RESET,'1',flags_in,flags_out);
+---------------- feryal bdl ma el enable bta3 el flag reg '1' 5aletoh en_Exec_Res
+
+flag:  my_nDFF generic map (n=>4) port map (Clk,RESET,en_Exec_Res,flags_in,flags_out);
 flag_buf: my_nDFF_fall  generic map (n=>4) port map (Clk,RESET,en_flag_buf_sig,flags_out,flags_out_buf);
 
 execute_result_H <= ALU_out(2*n-1 downto n);

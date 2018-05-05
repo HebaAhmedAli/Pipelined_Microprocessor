@@ -14,7 +14,8 @@ begin
   z<= std_logic_vector(zint);             
   process (clk)
   begin
-    if rising_edge(clk) then              
+-------------------- feryal kant rising 5letha falling --------------------
+    if falling_edge(clk) then              
       if rst ='1' then                   
         zint <= "000";
     --elsif zint = "100" then

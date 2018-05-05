@@ -64,7 +64,7 @@ END component;
 
 
 component  my_DFF IS
-     PORT( d,clk,rst,en : IN std_logic;   q : OUT std_logic);
+     PORT(clk,rst,en,d : IN std_logic;   q : OUT std_logic);
 END component;
 
 
@@ -94,7 +94,7 @@ mem_in_mux2: mux2_1 port map(pc_call,pc_int,int_en,mem_in_mux2_out);
 
 memm_result: my_nDFF port map(Clk,Reset,'1',data_mem_out,mem_result);
 
-pcc_mem: my_nDFF port map(Clk,Reset,'1',data_mem_out,pc_mem);
+pcc_mem: my_nDFF port map(Clk,'0','1',data_mem_out,pc_mem);
 
 --immediate_im_iw <= immediate_ie_m;
 immediate_im_iww: my_nDFF port map(Clk,Reset,'1',immediate_ie_m,immediate_im_iw);
@@ -109,20 +109,20 @@ Rsrc_add_im_iww: my_nDFF_fall generic map(n=>3) port map(Clk,Reset,'1', Rsrc_add
 Rdst_add_im_iww:  my_nDFF_fall generic map(n=>3) port map(Clk,Reset,'1', Rdst_add_ie_im ,Rdst_add_im_iw);
 
 --s1_wb <=  s1_wb_ie_im;
-s1_wbb: my_DFF port map( s1_wb_ie_im,Clk,Reset,'1',s1_wb);
+s1_wbb: my_DFF port map( Clk,Reset,'1',s1_wb_ie_im,s1_wb);
 
 --so_wb <= so_wb_ie_im;
-s0_wbb: my_DFF port map(so_wb_ie_im,Clk,Reset,'1', so_wb);
+s0_wbb: my_DFF port map(Clk,Reset,'1',so_wb_ie_im, so_wb);
 
 --out_en_reg_im_iw <= out_en_reg_ie_im;
-out_en_reg_im_iww: my_DFF port map(out_en_reg_ie_im,Clk,Reset,'1', out_en_reg_im_iw );
+out_en_reg_im_iww: my_DFF port map(Clk,Reset,'1', out_en_reg_ie_im,out_en_reg_im_iw );
 
-mem_read_reg_im_iw: my_DFF port map(mem_read_IE_IM,Clk,Reset,'1', mem_read_IM_IW );
+mem_read_reg_im_iw: my_DFF port map(Clk,Reset,'1',mem_read_IE_IM, mem_read_IM_IW );
 
 exc_h:my_nDFF port map(Clk,Reset,'1',Exc_result_H_IE_IM, Exc_result_H_IM_IW);
 exc_l:my_nDFF port map(Clk,Reset,'1',Exc_result_L_IE_IM, Exc_result_L_IM_IW);
 
-rdst_wr:my_DFF port map(en_write_Rdst_IE_IM,Clk,Reset,'1',en_write_Rdst_IM_IW);
-rsrc_wr:my_DFF port map(en_write_Rsrc_IE_IM,Clk,Reset,'1',en_write_Rsrc_IM_IW);
+rdst_wr:my_DFF port map(Clk,Reset,'1',en_write_Rdst_IE_IM,en_write_Rdst_IM_IW);
+rsrc_wr:my_DFF port map(Clk,Reset,'1',en_write_Rsrc_IE_IM,en_write_Rsrc_IM_IW);
 
 END memoryy;

@@ -15,12 +15,12 @@ ARCHITECTURE offset OF jmpOffset IS
 
 
 component my_DFF IS
-     PORT( d,clk,rst,en : IN std_logic;   q : OUT std_logic);
+     PORT(clk,rst,en,d : IN std_logic;   q : OUT std_logic);
 END component;
 
 signal jmpCond,jmpCondRegsig,jmpCondRegRst,jmpCondToReg :std_logic;
 
-constant jzOp :std_logic_vector(6 downto 0):= "0000000";
+constant jzOp :std_logic_vector(6 downto 0):= "0000110";
 constant jnOp :std_logic_vector(6 downto 0):= "0000001";
 constant jcOp :std_logic_vector(6 downto 0):= "0000010";
 
@@ -35,8 +35,8 @@ BEGIN
     jmpCondToReg<=jmpCond or delayJMPDE;
     offsetSel<=jmpCond or delayJMPDE;
     jmpCondReg<=jmpCondRegsig;
-    jmpCondRegRst<=(jmpCondRegsig and (not clk))or rstHard;
-    condJMP: my_DFF port map(jmpCondToReg,clk,jmpCondRegRst,'1',jmpCondRegsig); --make sure of enable
+    jmpCondRegRst<=(jmpCondRegsig and ( clk))or rstHard;
+    condJMP: my_DFF port map(clk,jmpCondRegRst,'1',jmpCondToReg,jmpCondRegsig); --make sure of enable
     
 
 

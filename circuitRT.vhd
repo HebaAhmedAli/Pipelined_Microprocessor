@@ -4,7 +4,7 @@ USE IEEE.std_logic_1164.all;
 
 ENTITY rtCircuit IS 
 GENERIC ( n : integer := 16); 
-        PORT (IR : IN std_logic_vector(n-1 DOWNTO 0);
+        PORT (IR,IR_Buff : IN std_logic_vector(n-1 DOWNTO 0);
         stallLD,clk,rstHard: IN std_logic;
         --stallRT : OUT std_logic;
         counterRTout:OUT std_logic_vector (1 downto 0));    
@@ -14,7 +14,7 @@ ARCHITECTURE circuitRT OF rtCircuit IS
 
 
 component my_DFF IS
-     PORT( d,clk,rst,en : IN std_logic;   q : OUT std_logic);
+     PORT(clk,rst,en,d : IN std_logic;   q : OUT std_logic);
 END component;
 
 component counter is
@@ -26,7 +26,7 @@ component counter is
 
 constant retOp :std_logic_vector(6 downto 0):= "0100000";
 constant rtiOp :std_logic_vector(6 downto 0):= "0100001";
-signal  counter3,counterEn,stallRTsig: std_logic ;
+signal  counter3,counterEn,stallRTsig,stallRT_buff_sig: std_logic ;
 signal counterRToutsig:std_logic_vector (1 downto 0);
 BEGIN
 
@@ -34,7 +34,16 @@ stallRTsig <= '1' when  IR(15 downto 9) =retOp or
     IR(15 downto 9) =rtiOp 
     else '0' when counter3='1';
 
-counterEn <=(not stallLD) and (stallRTsig); --awl mra w stallRT msh 3arfenha ???
+---------------------- feryal buffering stallRT -----------------
+stallRT_buff_sig <= '1' when  IR_Buff(15 downto 9) =retOp or
+    IR_Buff(15 downto 9) =rtiOp 
+    else '0' when counter3='1';
+
+--------------------------------------------------
+
+
+-------------------- feryal 5leet de el buff 34an ady forsa ll RET td5ol IR_Buff--------
+counterEn <=(not stallLD) and (stallRT_buff_sig); --awl mra w stallRT msh 3arfenha ???
 
 
 counter3 <='1'when counterRToutsig ="11" or rstHard='1'
