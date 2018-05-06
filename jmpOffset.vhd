@@ -32,7 +32,7 @@ BEGIN
     or (IRBuff(15 downto 9) =jnOp and flagReg(1)='1'))
     else '0';
 
-    jmpCondToReg<=jmpCond or delayJMPDE;
+    jmpCondToReg<=jmpCond or delayJMPDE;   -- feryaaal 7sb el design
     offsetSel<=jmpCond or delayJMPDE;
     jmpCondReg<=jmpCondRegsig;
     jmpCondDelayedRegRst<=(jmpCondDelayedRegsig and ( clk))or rstHard;

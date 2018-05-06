@@ -1,6 +1,6 @@
 vsim -gui work.pipeline
-mem load -i C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/FRam_codenoFU.mem /pipeline/f/ramm/ram
-mem load -i C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Fmem_codenoFU.mem /pipeline/M/mem/ram
+mem load -i C:/intelFPGA_pro/17.0/pipline_project/FRam_codenoFU.mem /pipeline/f/ramm/ram
+mem load -i C:/intelFPGA_pro/17.0/pipline_project/Fmem_codenoFU.mem /pipeline/M/mem/ram
 
 
 add wave -position 17  sim:/pipeline/D/R0/q
@@ -24,6 +24,9 @@ sim:/pipeline/E/IE_IM_exec_res_L/q
 add wave -position end  sim:/pipeline/D/R3_Rdst_buff/q
 add wave -position end  sim:/pipeline/D/R2_Rsrc_buff/q
 add wave -position insertpoint sim:/pipeline/FU/Rtype/dstRType/*
+add wave -position insertpoint sim:/pipeline/FU/ForwardDetection/stallLD1/*
+add wave -position insertpoint sim:/pipeline/FU/ForwardDetection/stallLD2/*
+add wave -position insertpoint sim:/pipeline/FU/ForwardDetection/stallLDBuffL/*
 
 force -freeze sim:/pipeline/Clk 0 0, 1 {50 ps} -r 100
 force -freeze sim:/pipeline/Rst 1 0

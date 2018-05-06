@@ -93,6 +93,13 @@ pc_mux2_s <= select_offset or pc_mux3_s;
 pc_mux2: mux2_1 port map(pc_inc,pc_mux3_out,pc_mux2_s,pc_mux2_out);
 pc_mux3: mux2_1 port map(Rdst_buf_ie_im,pc_mux4_out,pc_mux3_s,pc_mux3_out);
 
+--------------------------- feryal added dol 34an el LDM wel IN case ------------------
+pc_mux4: mux2_1 port map(Rdst,pc_mux5_out,IN_OR_LDM_ID_IE,pc_mux4_out);
+pc_mux5: mux2_1 port map(IN_Port,Imm_val_ID_IE,LDM_ID_IE,pc_mux5_out);
+
+
+----------------------------------------------------------------------------
+
 
 rst_ir_buf <= counter_1_2_3 or counter_rt_1_2 or jmp_cond or imm_buf or Reset;
 rst_pcc_cal <= jmp_cond or Reset;

@@ -1,0 +1,40 @@
+
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+entity WB IS
+	port (	clk,rst: in std_logic ;
+		Mem_Result,Exec_ResH,Immediate,In_Port,Rdst_buf_IM_IW: in std_logic_vector(15 downto 0);
+		S1_WB,S0_WB,Out_en_Reg: in std_logic;
+		Write_Data_Rdst,OUT_Port: out std_logic_vector(15 downto 0)
+		);
+END WB;
+
+
+ARCHITECTURE  my_WB of WB is 
+
+component  mux4 is 
+	Generic (m : integer :=16);
+port ( s1,s0: in std_logic;
+	input1,input2,input3,input4: in std_logic_vector(m-1 downto 0);
+	output: out std_logic_vector(m-1 downto 0));
+end component;
+
+component my_Register IS
+	Generic (m : integer :=16);
+	
+	port (D : in std_logic_vector (m-1 downto 0);
+		Q: out std_logic_vector (m-1 downto 0);
+		rst,clk: in std_logic ;
+		enable_write : std_logic);
+END component;
+
+begin 
+
+mux_WB: mux4 generic map (m=>16) port map (S1_WB,S0_WB,Mem_Result,Exec_ResH,Immediate,In_Port,Write_Data_Rdst);
+
+R_OUT_PORT : my_Register generic map (m=>16) port map (Rdst_buf_IM_IW,OUT_Port,rst,clk,Out_en_Reg);
+
+
+
+end my_WB;

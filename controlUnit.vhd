@@ -28,9 +28,9 @@ END component;
 component jmpOffset IS 
 GENERIC ( n : integer := 16); 
 PORT (IRBuff: IN std_logic_vector(n-1 DOWNTO 0);
-flagReg : IN std_logic_vector(3 DOWNTO 0);
-delayJMPDE,clk,rstHard:in std_logic;
-offsetSel,jmpCondDelayedReg : OUT std_logic);    
+        flagReg : IN std_logic_vector(3 DOWNTO 0);
+       	delayJMPDE,clk,rstHard:in std_logic;
+        offsetSel,jmpCondDelayedReg : OUT std_logic);    
 END component;
 
 

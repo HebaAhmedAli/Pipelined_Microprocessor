@@ -6,58 +6,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity R_type_component
 -- Compiling architecture toBuff of R_type_component
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/pipeline.vhd {0 {vcom -work work -2002 -explicit -stats=none {C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity pipeline
--- Compiling architecture a_pipeline of pipeline
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(258): Signal "counter_RT_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(262): Signal "write_en_Rsrc_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(262): Signal "write_en_Rdst_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(262): Signal "writeEnrDst_ecxept_LDM_IN_DE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(262): Signal "write_en_Rdst_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(262): Signal "twoOp_cu_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(265): Signal "mem_read_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(265): Signal "mem_read_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(265): Signal "write_en_Rsrc_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(265): Signal "rtype_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(265): Signal "Clk" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(265): Signal "Rst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): Signal "Exec_Result_H_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): Signal "Exec_Result_L_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): Signal "mem_result_IM_IW_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): Signal "Rsrc_buf_FU" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): Signal "Rdst_buf_FU" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "LDD_EM" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "POP_DE" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "twoOperand" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "memReadEM" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "memReadDE" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "writeEnrDstEM" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "writeEnrSrcMW" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "writeEnrDstDE" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "writeEnrSrcEM" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "writeEnrDstIR" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(266): (vcom-1035) Formal port "writeEnrSrcIR" has OPEN or no actual associated with it.
-** Error: C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\pipeline.vhd(319): VHDL Compiler exiting
-
-} {8.0 37.0} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux4.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux4.vhd
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux4.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux4.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity mux4
 -- Compiling architecture my_mux4 of mux4
-
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/jmpOffset.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/jmpOffset.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity jmpOffset
--- Compiling architecture offset of jmpOffset
 
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/forwardDetect.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/forwardDetect.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -66,6 +21,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Loading package std_logic_1164
 -- Compiling entity forwardDetect
 -- Compiling architecture forwarding of forwardDetect
+
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Fetch_module.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\Fetch_module.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity fetch
+-- Compiling architecture fetchh of fetch
 
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register2.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -126,6 +92,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity my_nDFF_sp
 -- Compiling architecture a_my_nDFF_sp of my_nDFF_sp
 
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_falling.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_falling.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nDFF_fall
+-- Compiling architecture a_my_nDFF_fall of my_nDFF_fall
+
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partA.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partA.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
@@ -138,22 +112,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling architecture alu_partA_arch of alu_partA
 ** Warning: C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partA.vhd(36): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_falling.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_falling.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity my_nDFF_fall
--- Compiling architecture a_my_nDFF_fall of my_nDFF_fall
-
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF_rise.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF_rise.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity my_DFF_rise
--- Compiling architecture a_my_DFF_rise of my_DFF_rise
-
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partB.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partB.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
@@ -165,22 +123,21 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity alu_partB
 -- Compiling architecture alu_partB_arch of alu_partB
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/forwardingUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/forwardingUnit.vhd
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF_rise.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF_rise.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity forwardingUnit
--- Compiling architecture forwardUnit of forwardingUnit
+-- Compiling entity my_DFF_rise
+-- Compiling architecture a_my_DFF_rise of my_DFF_rise
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counterINT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counterINT.vhd
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/tristateBuff.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/tristateBuff.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity counterINT
--- Compiling architecture Behavioral of counterINT
+-- Compiling entity tristatebuff
+-- Compiling architecture a_tristatebuff of tristatebuff
 
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partC.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partC.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -193,13 +150,22 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity alu_partC
 -- Compiling architecture alu_partC_arch of alu_partC
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/tristateBuff.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/tristateBuff.vhd
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counterINT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counterINT.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity tristatebuff
--- Compiling architecture a_tristatebuff of tristatebuff
+-- Loading package NUMERIC_STD
+-- Compiling entity counterINT
+-- Compiling architecture Behavioral of counterINT
+
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/forwardingUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\forwardingUnit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity forwardingUnit
+-- Compiling architecture forwardUnit of forwardingUnit
 
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux2_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux2_1.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -209,13 +175,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity mux2_1
 -- Compiling architecture mux2_1_a of mux2_1
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_adder.vhd
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decode.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decode.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity my_adder
--- Compiling architecture a_my_adder of my_adder
+-- Compiling entity Decode
+-- Compiling architecture my_Decode of Decode
 
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decoder_8.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decoder_8.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -225,14 +191,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity my_dec8
 -- Compiling architecture a_my_dec8 of my_dec8
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitINT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitINT.vhd
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_adder.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity intCircuit
--- Compiling architecture circuitINT of intCircuit
+-- Compiling entity my_adder
+-- Compiling architecture a_my_adder of my_adder
 
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partMul.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partMul.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -245,13 +210,33 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity alu_partMul
 -- Compiling architecture alu_partMul_arch of alu_partMul
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF.vhd
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitINT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitINT.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity my_DFF
--- Compiling architecture a_my_DFF of my_DFF
+-- Loading package NUMERIC_STD
+-- Compiling entity intCircuit
+-- Compiling architecture circuitINT of intCircuit
+
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Memory_module.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Memory_module.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity memory
+-- Compiling architecture memoryy of memory
+
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparator.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparator
+-- Compiling architecture comparing of comparator
 
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counter.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -262,29 +247,24 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity counter
 -- Compiling architecture Behavioral of Counter
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparator.vhd
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity comparator
--- Compiling architecture comparing of comparator
+-- Compiling entity my_DFF
+-- Compiling architecture a_my_DFF of my_DFF
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/controlUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\controlUnit.vhd}
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/execute_module.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/execute_module.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity controlUnit
--- Compiling architecture controlU of controlUnit
-
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitRT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitRT.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity rtCircuit
--- Compiling architecture circuitRT of rtCircuit
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity execute
+-- Compiling architecture execute_arch of execute
 
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_with_flags.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_with_flags.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -297,13 +277,29 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Compiling entity alu_with_flags
 -- Compiling architecture alu_with_flags_arch of alu_with_flags
 
-} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_nadder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_nadder.vhd
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitRT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitRT.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity my_nadder
--- Compiling architecture a_my_nadder of my_nadder
+-- Compiling entity rtCircuit
+-- Compiling architecture circuitRT of rtCircuit
+
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/WB.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/WB.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity WB
+-- Compiling architecture my_WB of WB
+
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/irControlSigs.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/irControlSigs.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity irSignals
+-- Compiling architecture controlIR of irSignals
 
 } {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/R_Type.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/R_Type.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
@@ -312,5 +308,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 2
 -- Loading package std_logic_1164
 -- Compiling entity R_type
 -- Compiling architecture SrcDstRType of R_type
+
+} {} {}} C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_nadder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_nadder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nadder
+-- Compiling architecture a_my_nadder of my_nadder
 
 } {} {}}

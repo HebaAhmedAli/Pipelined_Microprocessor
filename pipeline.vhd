@@ -250,8 +250,10 @@ signal  pop_cu_sig, pop_ID_IE_sig, pop_IE_IM_sig,
 -----------heba----
 signal in_port_IF_ID_sig,in_port_ID_IE_sig,in_port_IE_IM_sig,in_port_IM_IW_sig:std_logic_vector(n-1 downto 0);
 
-     
-	
+----------------------- feryaaal -----------------------     
+signal delayJMP_IF_ID_sig :std_logic;
+
+
 BEGIN
 
  
@@ -284,8 +286,8 @@ FU: forwardingUnit port map(ir_fetch_sig,ir_buf_ID_IF_sig,ir_buf_ID_IF_sig(5 dow
 ,rsrc_data,rdst_data,Exec_Result_H_IE_IM_sig,Exec_Result_L_IE_IM_sig,Exec_Result_H_IM_IW_sig,Exec_Result_L_IM_IW_sig,mem_result_IM_IW_sig,in_port_IE_IM_sig,
 in_port_IM_IW_sig,immediate_IM_IW_sig,Clk,Rst,rType_IE_IM_sig,rType_ID_IE_sig,rType_cu_sig,LDM_IE_IM_sig,in_IE_IM_sig,in_ID_IE_sig,LDD_IE_IM_sig,
 pop_ID_IE_sig,
-twoOp_cu_sig,mem_read_IE_IM_sig,mem_read_ID_IE_sig,write_en_Rdst_IE_IM_sig,write_en_Rsrc_IM_IW_sig,write_en_Rdst_ID_IE_sig,write_en_Rsrc_IE_IM_sig
-,write_en_Rsrc_CU_sig,write_en_Rdst_CU_sig,Rsrc_buf_FU,Rdst_buf_FU,
+twoOp_cu_sig,mem_read_IE_IM_sig,mem_read_ID_IE_sig,write_en_Rdst_IE_IM_sig,write_en_Rsrc_IM_IW_sig,write_en_Rdst_ID_IE_sig,write_en_Rsrc_IE_IM_sig,
+write_en_Rdst_CU_sig,write_en_Rsrc_CU_sig,Rsrc_buf_FU,Rdst_buf_FU,
 stallLD_fu_sig,Stall_LD_buf_FU_sig,delayJMP_fu_sig);
 
 
