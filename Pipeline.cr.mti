@@ -132,6 +132,50 @@ Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
 -- Compiling entity R_type_component
 -- Compiling architecture toBuff of R_type_component
 
+} {} {}} {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd} {0 {vcom -work work -2002 -explicit -stats=none {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd}
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity pipeline
+-- Compiling architecture a_pipeline of pipeline
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(262): Signal "write_en_Rsrc_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(262): Signal "write_en_Rdst_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(262): Signal "writeEnrDst_ecxept_LDM_IN_DE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(262): Signal "write_en_Rdst_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(262): Signal "twoOp_cu_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(265): Signal "mem_read_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(265): Signal "mem_read_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(265): Signal "write_en_Rsrc_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(265): Signal "rtype_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(265): Signal "Clk" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(265): Signal "Rst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): Signal "Exec_Result_H_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): Signal "Exec_Result_L_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): Signal "mem_result_IM_IW_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): Signal "Rsrc_buf_FU" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): Signal "Rdst_buf_FU" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "LDD_EM" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "POP_DE" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "twoOperand" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "memReadEM" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "memReadDE" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "writeEnrDstEM" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "writeEnrSrcMW" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "writeEnrDstDE" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "writeEnrSrcEM" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "writeEnrDstIR" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(266): (vcom-1035) Formal port "writeEnrSrcIR" has OPEN or no actual associated with it.
+** Error: /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd(319): VHDL Compiler exiting
+
+} {8.0 36.0} {}} {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardDetect.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardDetect.vhd}
+Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity forwardDetect
+-- Compiling architecture forwarding of forwardDetect
+
 } {} {}} {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/jmpOffset.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/jmpOffset.vhd}
 Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
 -- Loading package STANDARD
@@ -140,14 +184,6 @@ Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
 -- Compiling entity jmpOffset
 -- Compiling architecture offset of jmpOffset
 
-} {} {}} {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd}
-Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity pipeline
--- Compiling architecture a_pipeline of pipeline
-
 } {} {}} {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux4.vhd}
 Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
 -- Loading package STANDARD
@@ -155,14 +191,6 @@ Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
 -- Loading package std_logic_1164
 -- Compiling entity mux4
 -- Compiling architecture my_mux4 of mux4
-
-} {} {}} {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardDetect.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardDetect.vhd}
-Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity forwardDetect
--- Compiling architecture forwarding of forwardDetect
 
 } {} {}} {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register2.vhd}
 Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
@@ -280,14 +308,6 @@ Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
 -- Loading package std_logic_1164
 -- Compiling entity tristatebuff
 -- Compiling architecture a_tristatebuff of tristatebuff
-
-} {} {}} {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardingUnit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardingUnit.vhd}
-Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity forwardingUnit
--- Compiling architecture forwardUnit of forwardingUnit
 
 } {} {}} {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/counterINT.vhd} {1 {vcom -work work -2002 -explicit -stats=none {/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/counterINT.vhd}
 Model Technology ModelSim ALTERA vcom 10.3c Compiler 2014.09 Sep 20 2014

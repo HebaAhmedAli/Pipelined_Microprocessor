@@ -1,240 +1,39 @@
-# Loading project projectArch
-# Compile of Decode.vhd was successful.
-# Compile of execute_module.vhd failed with 1 errors.
-# Compile of pipeline.vhd failed with 2 errors.
-# 3 compiles, 2 failed with 3 errors.
-# Compile of execute_module.vhd failed with 1 errors.
-# Compile of pipeline.vhd failed with 2 errors.
-# 2 compiles, 2 failed with 3 errors.
-# Compile of execute_module.vhd failed with 1 errors.
-# Compile of pipeline.vhd failed with 2 errors.
-# 2 compiles, 2 failed with 3 errors.
-# Compile of execute_module.vhd failed with 1 errors.
-# Compile of pipeline.vhd failed with 2 errors.
-# 2 compiles, 2 failed with 3 errors.
-# Compile of execute_module.vhd was successful.
-# Compile of pipeline.vhd failed with 2 errors.
+# Loading project Pipeline
+# Compile of R_Type.vhd failed with 3 errors.
+# Compile of R_Type.vhd failed with 2 errors.
+# Compile of R_Type.vhd failed with 1 errors.
+# Compile of R_Type.vhd was successful.
+# Compile of forwardDetect.vhd was successful.
+# Compile of forwardingUnit.vhd failed with 2 errors.
 # 2 compiles, 1 failed with 2 errors.
+vsim work.r_type
+# vsim 
+# Start time: 02:19:46 on May 06,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.r_type(srcdstrtype)
+# Loading work.r_type_component(tobuff)
+# Loading work.mux4(my_mux4)
+# Loading work.mux2_1(mux2_1_a)
+quit -sim
+# Compile of forwardingUnit.vhd failed with 3 errors.
+# Compile of forwardingUnit.vhd failed with 1 errors.
+# Compile of R_Type.vhd was successful.
+# Compile of forwardingUnit.vhd failed with 1 errors.
+# Compile of forwardingUnit.vhd failed with 1 errors.
+# Compile of forwardingUnit.vhd failed with 3 errors.
+# Compile of forwardingUnit.vhd failed with 1 errors.
+# Compile of forwardingUnit.vhd was successful.
+dataset reload -f
+# Dataset not found: 
+# Compile of controlUnit.vhd was successful.
+# Compile of irControlSigs.vhd failed with 1 errors.
 # Compile of pipeline.vhd failed with 1 errors.
+# 3 compiles, 2 failed with 2 errors.
+# Compile of irControlSigs.vhd was successful.
 # Compile of pipeline.vhd failed with 1 errors.
-# Compile of pipeline.vhd was successful.
-vsim work.pipeline
-# vsim 
-# Start time: 03:14:50 on May 02,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.pipeline(a_pipeline)
-# Loading ieee.numeric_std(body)
-# Loading work.intcircuit(circuitint)
-# Loading work.counterint(behavioral)
-# Loading work.my_ndff(a_my_ndff)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.fetch(fetchh)
-# Loading work.ram(syncrama)
-# Loading work.my_ndff_fall(a_my_ndff_fall)
-# Loading work.mux2_1(mux2_1_a)
-# Loading work.controlunit(controlu)
-# Loading work.irsignals(controlir)
-# Loading work.rtcircuit(circuitrt)
-# Loading work.counter(behavioral)
-# Loading work.jmpoffset(offset)
-# Loading work.my_dff(a_my_dff)
-# Loading work.forwardingunit(forwardunit)
-# Loading work.forwarddetect(forwarding)
-# Loading work.comparing_component(comparing)
-# Loading work.comparator(comparing)
-# Loading work.r_type(srcdstrtype)
-# Loading work.r_type_component(tobuff)
-# Loading work.decode(my_decode)
-# Loading work.my_dec8(a_my_dec8)
-# Loading work.tristatebuff(a_tristatebuff)
-# Loading work.execute(execute_arch)
-# Loading work.alu_with_flags(alu_with_flags_arch)
-# Loading work.alu_integ(alu_integ_arch)
-# Loading work.alu_parta(alu_parta_arch)
-# Loading work.my_nadder(a_my_nadder)
-# Loading work.my_adder(a_my_adder)
-# Loading work.alu_partb(alu_partb_arch)
-# Loading work.alu_partc(alu_partc_arch)
-# Loading work.alu_partmul(alu_partmul_arch)
-# Loading work.mux_2x1_1_bit(mux_2x1_1_bit_a)
-# Loading work.memory(memoryy)
-# Loading work.my_ndff_sp(a_my_ndff_sp)
-# Loading work.wb(my_wb)
-# Loading work.mux4(my_mux4)
-do init.do
-# vsim 
-# Start time: 03:15:03 on May 02,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.pipeline(a_pipeline)
-# Loading ieee.numeric_std(body)
-# Loading work.intcircuit(circuitint)
-# Loading work.counterint(behavioral)
-# Loading work.my_ndff(a_my_ndff)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.fetch(fetchh)
-# Loading work.ram(syncrama)
-# Loading work.my_ndff_fall(a_my_ndff_fall)
-# Loading work.mux2_1(mux2_1_a)
-# Loading work.controlunit(controlu)
-# Loading work.irsignals(controlir)
-# Loading work.rtcircuit(circuitrt)
-# Loading work.counter(behavioral)
-# Loading work.jmpoffset(offset)
-# Loading work.my_dff(a_my_dff)
-# Loading work.forwardingunit(forwardunit)
-# Loading work.forwarddetect(forwarding)
-# Loading work.comparing_component(comparing)
-# Loading work.comparator(comparing)
-# Loading work.r_type(srcdstrtype)
-# Loading work.r_type_component(tobuff)
-# Loading work.decode(my_decode)
-# Loading work.my_dec8(a_my_dec8)
-# Loading work.tristatebuff(a_tristatebuff)
-# Loading work.execute(execute_arch)
-# Loading work.alu_with_flags(alu_with_flags_arch)
-# Loading work.alu_integ(alu_integ_arch)
-# Loading work.alu_parta(alu_parta_arch)
-# Loading work.my_nadder(a_my_nadder)
-# Loading work.my_adder(a_my_adder)
-# Loading work.alu_partb(alu_partb_arch)
-# Loading work.alu_partc(alu_partc_arch)
-# Loading work.alu_partmul(alu_partmul_arch)
-# Loading work.mux_2x1_1_bit(mux_2x1_1_bit_a)
-# Loading work.memory(memoryy)
-# Loading work.my_ndff_sp(a_my_ndff_sp)
-# Loading work.wb(my_wb)
-# Loading work.mux4(my_mux4)
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/M
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/M
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/M
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/M
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/M/mem
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u3
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/f
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/f
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/f/ramm
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /pipeline/E/alu_module
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ps  Iteration: 8  Instance: /pipeline/E/alu_module
-# Compile of pipeline.vhd was successful.
-do init.do
-# vsim 
-# Start time: 03:18:37 on May 02,2018
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.pipeline(a_pipeline)
-# Loading ieee.numeric_std(body)
-# Loading work.intcircuit(circuitint)
-# Loading work.counterint(behavioral)
-# Loading work.my_ndff(a_my_ndff)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.fetch(fetchh)
-# Loading work.ram(syncrama)
-# Loading work.my_ndff_fall(a_my_ndff_fall)
-# Loading work.mux2_1(mux2_1_a)
-# Loading work.controlunit(controlu)
-# Loading work.irsignals(controlir)
-# Loading work.rtcircuit(circuitrt)
-# Loading work.counter(behavioral)
-# Loading work.jmpoffset(offset)
-# Loading work.my_dff(a_my_dff)
-# Loading work.forwardingunit(forwardunit)
-# Loading work.forwarddetect(forwarding)
-# Loading work.comparing_component(comparing)
-# Loading work.comparator(comparing)
-# Loading work.r_type(srcdstrtype)
-# Loading work.r_type_component(tobuff)
-# Loading work.decode(my_decode)
-# Loading work.my_dec8(a_my_dec8)
-# Loading work.tristatebuff(a_tristatebuff)
-# Loading work.execute(execute_arch)
-# Loading work.alu_with_flags(alu_with_flags_arch)
-# Loading work.alu_integ(alu_integ_arch)
-# Loading work.alu_parta(alu_parta_arch)
-# Loading work.my_nadder(a_my_nadder)
-# Loading work.my_adder(a_my_adder)
-# Loading work.alu_partb(alu_partb_arch)
-# Loading work.alu_partc(alu_partc_arch)
-# Loading work.alu_partmul(alu_partmul_arch)
-# Loading work.mux_2x1_1_bit(mux_2x1_1_bit_a)
-# Loading work.memory(memoryy)
-# Loading work.my_ndff_sp(a_my_ndff_sp)
-# Loading work.wb(my_wb)
-# Loading work.mux4(my_mux4)
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/M
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/M
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/M
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/M
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/M/mem
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u3
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u3
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u2
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/E/alu_module/alu0/u2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/f
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/f
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline/f/ramm
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 3  Instance: /pipeline/E/alu_module
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ps  Iteration: 8  Instance: /pipeline/E/alu_module
-run
-run
-run
-run
-run
-run
-run
-run
-# Break key hit
-# Break key hit
-quit
-# End time: 03:23:40 on May 02,2018, Elapsed time: 0:05:03
-# Errors: 0, Warnings: 17
+# 2 compiles, 1 failed with 1 error.
+# Compile of forwardingUnit.vhd was successful.
+# Compile of pipeline.vhd failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.

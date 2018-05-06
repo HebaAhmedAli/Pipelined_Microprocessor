@@ -7,7 +7,7 @@ GENERIC ( n : integer := 16);
         twoOp,incSp,enSP ,enMemWr,lddORpop,setcORclrc,
         imm,wrEnRdst,enExecRes,wrEnRsrc,outEnReg,
         alu1,alu2,alu3,alu4,s1Wb,s0Wb,
-        rType,RET,RTI,PUSH,STD,SETC,CLRC,memRead,IN_OR_LDM_out,LDM_out,writeEnrDst_ecxept_LDM_IN : OUT std_logic);    -- feryal added  IN_OR_LDM_out,LDM_out
+        rType,RET,RTI,PUSH,STD,SETC,CLRC,memRead,IN_OR_LDM_out,LDM_out,writeEnrDst_ecxept_LDM_IN,IN_out,POP : OUT std_logic);    -- feryal added  IN_OR_LDM_out,LDM_out
 END ENTITY irSignals;
 
 
@@ -134,6 +134,11 @@ BEGIN
     CLRC <='1' when  IRBuff(15 downto 9) = clrcOp
     else '0';
 
+    IN_out <='1' when  IRBuff(15 downto 9) = inOp
+    else '0';
+
+    POP <='1' when  IRBuff(15 downto 9) = popOp
+    else '0';
 
     enExecRes <='1' when IRBuff(15 downto 9) = nopOp
     or IRBuff(15 downto 13) = addOp(6 downto 4)

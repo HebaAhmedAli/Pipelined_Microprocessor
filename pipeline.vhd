@@ -144,15 +144,22 @@ END component;
 
 component forwardingUnit IS 
 GENERIC ( n : integer := 16); 
-		PORT (	IR,IRBuff : IN std_logic_vector(n-1 DOWNTO 0);
-				rSrcAddress_DE,rSrcAddress_EM,rDstAddress_DE,rDstAddress_EM :IN std_logic_vector(2 DOWNTO 0);
-				writeEnrSrcDE,writeEnrDstDE,writeEnrDst_ecxept_LDM_IN_DE,writeEnrDstEM,twoOp:IN std_logic;
-                memReadEM,memReadMW:  IN std_logic;
-                MulDE,RtypeDE,Clk,hardRst:  IN std_logic;
+PORT (	IR,IRBuff : IN std_logic_vector(n-1 DOWNTO 0);
+				rSrcAddress_Buff,rSrcAddress_DE,rSrcAddress_EM,
+				rDstAddress_Buff,rDstAddress_DE,rDstAddress_EM,rDstAddress_IR :IN std_logic_vector(2 DOWNTO 0);
 				rSrc,rDst : IN std_logic_vector(n-1 DOWNTO 0);
-				execResultHigh,execResultLow,memoryResult : IN std_logic_vector(n-1 DOWNTO 0);
+				execResultHighEM,execResultLowEM,execResultHighMW,execResultLowMW,
+				memoryResultMW,inPortEM,inPortMW,immedMW : IN std_logic_vector(n-1 DOWNTO 0);
+				
+				-----------------------------------------------------------------------------------
+                clk ,hardRst,RtypeEM,RtypeDE,RtypeIR,LDM_EM,IN_EM,IN_DE,LDD_EM,POP_DE,
+				twoOperand,memReadEM,memReadDE,
+				writeEnrDstEM,writeEnrSrcMW,writeEnrDstDE,writeEnrSrcEM,
+				writeEnrDstIR,writeEnrSrcIR	: IN std_logic;
+				-----------------------------------------------------------------------------------
+
 				rSrcBuf,rDstBuf : OUT std_logic_vector(n-1 DOWNTO 0); 
-				stallLD,stallLDBuff,delayJmp: OUT std_logic);      
+				stallLDout,stallLDReg,delayJMP: OUT std_logic);              
 END component;
 
 component intCircuit IS 
