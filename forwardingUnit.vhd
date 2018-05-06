@@ -77,7 +77,7 @@ BEGIN
 		writeEnrDstEM,writeEnrSrcMW,writeEnrDstDE,writeEnrSrcEM,
 		writeEnrDstIR,writeEnrSrcIR,
 		----------------------------------
-		stallLDReg,delayJMP,execResultLSrcSelMW, execResultLDstSelMW,execResultHDstSelEM,execResultHSrcSelEM,
+		stallLDout,stallLDReg,delayJMP,execResultLSrcSelMW, execResultLDstSelMW,execResultHDstSelEM,execResultHSrcSelEM,
 		execResultHSrcSelMW,execResultHDstSelMW,inPortMWSrc,inPortMWDst,memResSrcSelMW,
 		memResDstSelMW,immedMWSrc,immedMWDst,inPortEMSrc,inPortEMDst);
 	

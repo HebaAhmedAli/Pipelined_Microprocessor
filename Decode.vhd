@@ -4,8 +4,9 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 entity Decode IS
 	Generic (m : integer :=16);
-	port (	clk,rst: in std_logic ;
-		IR_Buff , write_data_Rdst, Exec_Result_H , IR,PC_Call:in std_logic_vector (m-1 downto 0);
+port (	clk,rst: in std_logic ;
+		pop_cu,LDD_cu,in_cu: in std_logic;
+		in_port_IF_ID,IR_Buff , write_data_Rdst, Exec_Result_H , IR,PC_Call:in std_logic_vector (m-1 downto 0);
 		Rdst_add_IM_IW, Rsrc_add_IM_IW: in std_logic_vector(2 downto 0);
 		write_en_Rsrc_IM_IW,write_en_Rdst_IM_IW ,Imm_control_signal , JMP_cond , Stall_LD : in std_logic;
 		
@@ -15,7 +16,6 @@ entity Decode IS
 		rtype_cu,mem_read_sig,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_exec_result_sig : in std_logic;
 		ALU_op_ctrl : in std_logic_vector (3 downto 0);
 		write_en_Rsrc,write_en_Rdst,inc_SP,en_SP,en_mem_write,out_en_reg,S1_WB,S0_WB: in std_logic;
-
 	
 		mem_read_sig_ID_IE,write_en_Rsrc_ID_IE,write_en_Rdst_ID_IE,inc_SP_ID_IE,en_SP_ID_IE,en_mem_write_ID_IE,out_en_reg_ID_IE,S1_WB_ID_IE,S0_WB_ID_IE: out std_logic;
 		RTI_sig_ID_IE,SETC_sig_ID_IE,CLRC_sig_ID_IE,SETC_or_CLRC_sig_ID_IE,en_exec_result_sig_ID_IE,rtype_ID_IE : out std_logic;
@@ -35,9 +35,12 @@ entity Decode IS
 		selOffsetPc : in std_logic;
 		selOffsetPc_ID_IE : out std_logic;
 		RTI_cu,RET_cu : in std_logic;
-		RTI_ID_IE,RET_ID_IE : out std_logic
+		RTI_ID_IE,RET_ID_IE : out std_logic;
+		pop_ID_IE,LDD_ID_IE,in_ID_IE: out std_logic;
+		in_port_ID_IE :out  std_logic_vector(m-1 downto 0 )
 		
 	);
+
 END Decode;
 
 
@@ -190,7 +193,7 @@ sel_mux_data_ExcH_muxR5<=out_dec_write_Rsrc(5) and  write_en_Rsrc_IM_IW;
 -- ID_IE
 ------------------ feryal ------------------------
 Imm_buff_ID_IE <= Imm_buff_ID_IE_temp;
-imm_buff_rst <= rst or (Imm_buff_ID_IE_temp and clk);
+imm_buff_rst <=  (Imm_buff_ID_IE_temp and clk) or JMP_cond_OR_Stall_LD;
 
 R1_Imm_buff : my_DFF port map (clk,imm_buff_rst,'1',Imm_control_signal,Imm_buff_ID_IE_temp);
 
@@ -198,9 +201,9 @@ R2_Rsrc_buff : my_nDFF_fall generic map (n=>16 ) port map (clk,JMP_cond_OR_Stall
 
 R3_Rdst_buff : my_nDFF_fall generic map (n=>16 ) port map (clk,JMP_cond_OR_Stall_LD,'1',Rdst_Buff_in, Rdst_buff_ID_IE);
 
-R4_Rsrc_add : my_nDFF_fall generic map (n=>3 ) port map (clk,rst,'1',Rsrc_add,Rsrc_add_ID_IE);
+R4_Rsrc_add : my_nDFF_fall generic map (n=>3 ) port map (clk,JMP_cond_OR_Stall_LD,'1',Rsrc_add,Rsrc_add_ID_IE);
 
-R5_Rdst_add : my_nDFF_fall generic map (n=>3 ) port map (clk,rst,'1',Rdst_add,Rdst_add_ID_IE);
+R5_Rdst_add : my_nDFF_fall generic map (n=>3 ) port map (clk,JMP_cond_OR_Stall_LD,'1',Rdst_add,Rdst_add_ID_IE);
 
 
 R6_IR_immediate : my_nDFF_fall generic map (n=>16 ) port map (clk,JMP_cond_OR_Stall_LD,'1',IR,IR_Immediate_ID_IE);
@@ -208,38 +211,45 @@ R6_IR_immediate : my_nDFF_fall generic map (n=>16 ) port map (clk,JMP_cond_OR_St
 R7_PC_Call : my_nDFF generic map (n=>16 ) port map (clk,JMP_cond_OR_Stall_LD,'1',PC_Call,PC_Call_ID_IE);
 
 
-JMP_cond_OR_Stall_LD <= JMP_cond or Stall_LD ;
+JMP_cond_OR_Stall_LD <= JMP_cond or Stall_LD or rst;
 
 -- store the signals of the CU 
 
-R_mem_read_sig:		 my_DFF port map (clk,rst,'1',mem_read_sig,mem_read_sig_ID_IE);
-R_RTI_sig:			 my_DFF port map (clk,rst,'1',RTI_sig,RTI_sig_ID_IE);
-R_SETC_sig:   		 my_DFF port map (clk,rst,'1',SETC_sig,SETC_sig_ID_IE);
-R_CLRC_sig: 		 my_DFF port map (clk,rst,'1',CLRC_sig,CLRC_sig_ID_IE);
-R_SETC_or_CLRC_sig : my_DFF port map (clk,rst,'1',SETC_or_CLRC_sig,SETC_or_CLRC_sig_ID_IE);
-R_en_exec_result_sig : my_DFF port map (clk,rst,'1',en_exec_result_sig,en_exec_result_sig_ID_IE);
-R_ALU_op_ctrl : my_nDFF_fall generic map (n=>4 ) port map (clk,rst,'1', ALU_op_ctrl,ALU_op_ctrl_ID_IE);
-R_write_en_Rsrc : my_DFF port map (clk,rst,'1',write_en_Rsrc,write_en_Rsrc_ID_IE);
-R_write_en_Rdst : my_DFF port map (clk,rst,'1',write_en_Rdst,write_en_Rdst_ID_IE);
-R_rType : my_DFF port map (clk,rst,'1',rtype_cu,rtype_ID_IE);
-R_inc_SP : my_DFF port map (clk,rst,'1',inc_SP,inc_SP_ID_IE);
-R_en_SP : my_DFF port map (clk,rst,'1',en_SP,en_SP_ID_IE);
-R_en_mem_write : my_DFF port map (clk,rst,'1',en_mem_write,en_mem_write_ID_IE);
+R_mem_read_sig:		 my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',mem_read_sig,mem_read_sig_ID_IE);
+R_RTI_sig:			 my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',RTI_sig,RTI_sig_ID_IE);
+R_SETC_sig:   		 my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',SETC_sig,SETC_sig_ID_IE);
+R_CLRC_sig: 		 my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',CLRC_sig,CLRC_sig_ID_IE);
+R_SETC_or_CLRC_sig : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',SETC_or_CLRC_sig,SETC_or_CLRC_sig_ID_IE);
+R_en_exec_result_sig : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',en_exec_result_sig,en_exec_result_sig_ID_IE);
+R_ALU_op_ctrl : my_nDFF_fall generic map (n=>4 ) port map (clk,JMP_cond_OR_Stall_LD,'1', ALU_op_ctrl,ALU_op_ctrl_ID_IE);
+R_write_en_Rsrc : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',write_en_Rsrc,write_en_Rsrc_ID_IE);
+R_write_en_Rdst : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',write_en_Rdst,write_en_Rdst_ID_IE);
+R_rType : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',rtype_cu,rtype_ID_IE);
+R_inc_SP : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',inc_SP,inc_SP_ID_IE);
+R_en_SP : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',en_SP,en_SP_ID_IE);
+R_en_mem_write : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',en_mem_write,en_mem_write_ID_IE);
 --R_mem_read: my_DFF port map (clk,rst,'1',mem_read,mem_read_ID_IE);
 --R_LDD_or_pop : my_DFF port map (clk,rst,'1',LDD_or_pop,LDD_or_pop_ID_IE);
-R_out_en_re : my_DFF port map (clk,rst,'1',out_en_reg,out_en_reg_ID_IE);
-R_S1_WB : my_DFF port map (clk,rst,'1',S1_WB,S1_WB_ID_IE);
-R_S0_WB: my_DFF port map (clk,rst,'1',S0_WB,S0_WB_ID_IE);
-R_delay_JMP: my_DFF port map (clk,rst,'1',delay_JMP_fu,delay_JMP_ID_IE);
-R_LDM: my_DFF port map (clk,rst,'1',LDM_cu,LDM_ID_IE);
-R_IN_OR_LDM: my_DFF port map (clk,rst,'1',IN_OR_LDM_cu,IN_OR_LDM_ID_IE);
-R_writeEnRdst_except_LDM_IN: my_DFF port map (clk,rst,'1',writeEnrDst_ecxept_LDM_IN_cu,writeEnrDst_ecxept_LDM_IN_DE);
-R_selOffsetPc : my_DFF port map (clk,rst,'1',selOffsetPc,selOffsetPc_ID_IE);
-R_RET : my_DFF port map (clk,rst,'1',RET_cu,RET_ID_IE);
-R_RTI : my_DFF port map (clk,rst,'1',RTI_cu,RTI_ID_IE);	
+R_out_en_re : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',out_en_reg,out_en_reg_ID_IE);
+R_S1_WB : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',S1_WB,S1_WB_ID_IE);
+R_S0_WB: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',S0_WB,S0_WB_ID_IE);
+R_delay_JMP: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',delay_JMP_fu,delay_JMP_ID_IE);
+R_LDM: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',LDM_cu,LDM_ID_IE);
+R_IN_OR_LDM: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',IN_OR_LDM_cu,IN_OR_LDM_ID_IE);
+R_writeEnRdst_except_LDM_IN: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',writeEnrDst_ecxept_LDM_IN_cu,writeEnrDst_ecxept_LDM_IN_DE);
+R_selOffsetPc : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',selOffsetPc,selOffsetPc_ID_IE);
+R_RET : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',RET_cu,RET_ID_IE);
+R_RTI : my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',RTI_cu,RTI_ID_IE);	
 		
-	
-		
+--R_rtype: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',rType_cu,rType_ID_IE);
+R_pop: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',pop_cu,pop_ID_IE);
+--R_LDM: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',LDM_cu,LDM_ID_IE);
+R_LDD: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',LDD_cu,LDD_ID_IE);
+R_in: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',in_cu,in_ID_IE);
+--R_in_or_ldm: my_DFF port map (clk,JMP_cond_OR_Stall_LD,'1',IN_OR_LDM_cu,IN_OR_LDM_ID_IE);
+
+inn_port: my_nDFF port map(Clk,'0','1',in_port_IF_ID,in_port_ID_IE);	
+
 
 end my_Decode;
 

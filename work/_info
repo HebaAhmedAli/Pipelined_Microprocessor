@@ -7,35 +7,35 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-d/home/fatema/altera/project_2nd
+dC:/intelFPGA_pro/17.0/project_2nd
 Ealu_integ
-Z0 w1525377246
+Z0 w1525539496
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z3 d/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor
-Z4 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_integ.vhd
-Z5 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_integ.vhd
+Z3 dC:/intelFPGA_pro/17.0/Pipelined_Microprocessor
+Z4 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_integ.vhd
+Z5 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_integ.vhd
 l0
 L4
-V4b>17f_dPh?WDUY?2l6in1
+VDBo0Z_jQjPNEXNCYG;@cR0
 !s100 ma7:_ci5E2[F;=OeQG3aB2
-Z6 OV;C;10.3c;59
+Z6 OV;C;10.5c;63
 32
-Z7 !s110 1525450042
+Z7 !s110 1525603604
 !i10b 1
-Z8 !s108 1525450042.364959
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_integ.vhd|
-Z10 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_integ.vhd|
+Z8 !s108 1525603604.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_integ.vhd|
+Z10 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_integ.vhd|
 !i113 1
 Z11 o-work work -2002 -explicit
-Z12 tExplicit 1
+Z12 tExplicit 1 CvgOpt 0
 Aalu_integ_arch
 R1
 R2
-DEx4 work 9 alu_integ 0 22 4b>17f_dPh?WDUY?2l6in1
+DEx4 work 9 alu_integ 0 22 DBo0Z_jQjPNEXNCYG;@cR0
 l66
 L16
-VX6Y0MSDEYnNc@=0I][>721
+V0Xz3Q:GPYlcPCBOUa8@Zl3
 !s100 :Kf=hBWUK<3ejcUZ@WV6_3
 R6
 32
@@ -48,551 +48,629 @@ R10
 R11
 R12
 Ealu_parta
-Z13 w1525268550
-Z14 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R0
+Z13 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z14 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R1
 R2
 R3
-Z17 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partA.vhd
-Z18 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partA.vhd
+Z16 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partA.vhd
+Z17 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partA.vhd
 l0
 L6
-V56;M@[dGXXI_lW3gD;]oz0
+VzC7IP=lMJe9jigQVM?l9A3
 !s100 `AA?_?]i:?a2?8E4XbHcc2
 R6
 32
 R7
 !i10b 1
-Z19 !s108 1525450042.825300
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partA.vhd|
-Z21 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partA.vhd|
+R8
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partA.vhd|
+Z19 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partA.vhd|
 !i113 1
 R11
 R12
 Aalu_parta_arch
+R13
 R14
 R15
-R16
 R1
 R2
-DEx4 work 9 alu_parta 0 22 56;M@[dGXXI_lW3gD;]oz0
+DEx4 work 9 alu_parta 0 22 zC7IP=lMJe9jigQVM?l9A3
 l40
 L17
-Vo7Ig4H;2O[59l`X5[1Qc93
+V_gaU`^3[0Q0z90Y7gfFLH0
 !s100 9V]L<E;3^kj7iYl0NlkSW2
 R6
 32
 R7
 !i10b 1
+R8
+R18
 R19
-R20
-R21
 !i113 1
 R11
 R12
 Ealu_partb
+R0
 R13
 R14
 R15
-R16
 R1
 R2
 R3
-Z22 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partB.vhd
-Z23 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partB.vhd
+Z20 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partB.vhd
+Z21 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partB.vhd
 l0
 L6
-VU1[87R99NZ1S=>LdbEZ<G2
+VA_I2F<Eh`cN^I;>BLQnoC2
 !s100 aO;nN?5P06Zg3beLPbcaP3
 R6
 32
 R7
 !i10b 1
-Z24 !s108 1525450042.931982
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partB.vhd|
-Z26 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partB.vhd|
+R8
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partB.vhd|
+Z23 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partB.vhd|
 !i113 1
 R11
 R12
 Aalu_partb_arch
+R13
 R14
 R15
-R16
 R1
 R2
-DEx4 work 9 alu_partb 0 22 U1[87R99NZ1S=>LdbEZ<G2
+DEx4 work 9 alu_partb 0 22 A_I2F<Eh`cN^I;>BLQnoC2
 l18
 L16
-V7L3LRid6LH9jRe^IXmeoY1
+V[WzF`i[g>GKHLYfAmaEj01
 !s100 mG6W>G>mMB_GRMOOM4ZX92
 R6
 32
 R7
 !i10b 1
-R24
-R25
-R26
+R8
+R22
+R23
 !i113 1
 R11
 R12
 Ealu_partc
+R0
 R13
 R14
 R15
-R16
 R1
 R2
 R3
-Z27 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partC.vhd
-Z28 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partC.vhd
+Z24 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partC.vhd
+Z25 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partC.vhd
 l0
 L7
-V0;PD9L@1kPhFB:1:6P;mm0
+VeJSfWD15Yhf0fFTI<EiGP2
 !s100 @GV[S9Df7W:D2AInR:iGD1
 R6
 32
-R7
+Z26 !s110 1525603605
 !i10b 1
-Z29 !s108 1525450042.983192
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partC.vhd|
-Z31 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partC.vhd|
+Z27 !s108 1525603605.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partC.vhd|
+Z29 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partC.vhd|
 !i113 1
 R11
 R12
 Aalu_partc_arch
+R13
 R14
 R15
-R16
 R1
 R2
-DEx4 work 9 alu_partc 0 22 0;PD9L@1kPhFB:1:6P;mm0
+DEx4 work 9 alu_partc 0 22 eJSfWD15Yhf0fFTI<EiGP2
 l24
 L20
-VLMdF0iN6UzFWie^<LOO?;1
+V<H9mhFl7R=edQOPX[Lz5Q3
 !s100 PQ=k_nXL611RNSE:MM:KG2
 R6
 32
-Z32 !s110 1525450043
+R26
 !i10b 1
+R27
+R28
 R29
-R30
-R31
 !i113 1
 R11
 R12
 Ealu_partmul
+R0
 R13
 R14
 R15
-R16
 R1
 R2
 R3
-Z33 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partMul.vhd
-Z34 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partMul.vhd
+Z30 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partMul.vhd
+Z31 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partMul.vhd
 l0
 L6
-VooKh<1l5fI`[2V<hn5MVm3
+VkgeaXcl?N5Kjo8fJEccZ]2
 !s100 E2O>aTjObB<jf6Ogec?Ib2
 R6
 32
-R32
+R26
 !i10b 1
-Z35 !s108 1525450043.033755
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partMul.vhd|
-Z37 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_partMul.vhd|
+R27
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partMul.vhd|
+Z33 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_partMul.vhd|
 !i113 1
 R11
 R12
 Aalu_partmul_arch
+R13
 R14
 R15
-R16
 R1
 R2
-DEx4 work 11 alu_partmul 0 22 ooKh<1l5fI`[2V<hn5MVm3
+DEx4 work 11 alu_partmul 0 22 kgeaXcl?N5Kjo8fJEccZ]2
 l20
 L17
-Vm8i6Ge2<b@1YTLCJS?dTG1
+V__RaOeC6GJ^TiPBSj0CC^1
 !s100 kV`H2hT3WJX0ce3?=[A9H1
 R6
 32
-R32
+R26
 !i10b 1
-R35
+R27
+R32
+R33
+!i113 1
+R11
+R12
+Ealu_with_flags
+R0
+R13
+R14
+R15
+R1
+R2
+R3
+Z34 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_with_flags.vhd
+Z35 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_with_flags.vhd
+l0
+L6
+V>deF61B`NfSG1V7@iMV3:3
+!s100 b[6nLG_OD9mn3]LJjlN[R2
+R6
+32
+R26
+!i10b 1
+R27
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_with_flags.vhd|
+Z37 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/alu_with_flags.vhd|
+!i113 1
+R11
+R12
+Aalu_with_flags_arch
+R13
+R14
+R15
+R1
+R2
+DEx4 work 14 alu_with_flags 0 22 >deF61B`NfSG1V7@iMV3:3
+l73
+L21
+V=c?Yn2]]m@A]>P82Q[W2m1
+!s100 5BgW_57UUWSj`<b32B2332
+R6
+32
+R26
+!i10b 1
+R27
 R36
 R37
 !i113 1
 R11
 R12
-Ealu_with_flags
-Z38 w1525381594
-R14
-R15
-R16
-R1
-R2
-R3
-Z39 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_with_flags.vhd
-Z40 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_with_flags.vhd
-l0
-L6
-Va?gZD=WO<hJdOX6WmGDKc2
-!s100 b[6nLG_OD9mn3]LJjlN[R2
-R6
-32
-R32
-!i10b 1
-Z41 !s108 1525450043.123222
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_with_flags.vhd|
-Z43 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/alu_with_flags.vhd|
-!i113 1
-R11
-R12
-Aalu_with_flags_arch
-R14
-R15
-R16
-R1
-R2
-DEx4 work 14 alu_with_flags 0 22 a?gZD=WO<hJdOX6WmGDKc2
-l73
-L21
-Vb_fXKjGZ:6[N6<gi8PDfV3
-!s100 5BgW_57UUWSj`<b32B2332
-R6
-32
-R32
-!i10b 1
-R41
-R42
-R43
-!i113 1
-R11
-R12
 Ecomparator
-R13
+R0
 R1
 R2
 R3
-Z44 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/comparator.vhd
-Z45 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/comparator.vhd
+Z38 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparator.vhd
+Z39 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparator.vhd
 l0
 L4
-V_mGf_TnfS0agb<h`Y>;890
+VD_eR`RWAfoj:=i2F5iLZF0
 !s100 E8FQAA]4UX`h7nHF@HBkY0
 R6
 32
-R32
+Z40 !s110 1525603606
 !i10b 1
-Z46 !s108 1525450043.266379
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/comparator.vhd|
-Z48 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/comparator.vhd|
+R27
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparator.vhd|
+Z42 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparator.vhd|
 !i113 1
 R11
 R12
 Acomparing
 R1
 R2
-DEx4 work 10 comparator 0 22 _mGf_TnfS0agb<h`Y>;890
+DEx4 work 10 comparator 0 22 D_eR`RWAfoj:=i2F5iLZF0
 l13
 L11
-VSIYgbSE=goh[_NgNUC^mE2
+VgoR4d26P;dYkPk99N=Gh<3
 !s100 fQ;OUoAZj>_V[1>2MaUiA2
 R6
 32
-R32
+R40
 !i10b 1
-R46
-R47
-R48
+R27
+R41
+R42
 !i113 1
 R11
 R12
 Ecomparing_component
-R13
+R0
 R1
 R2
 R3
-Z49 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/comparing.vhd
-Z50 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/comparing.vhd
+Z43 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparing.vhd
+Z44 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparing.vhd
 l0
 L4
-V>lVRYHaMOQ[@[U43P=`6T3
+V]fFIbI_gGR7[H0NPEaS311
 !s100 n[j<TG=Edz8z692eG@R6T0
 R6
 32
-R32
+R40
 !i10b 1
-Z51 !s108 1525450043.307557
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/comparing.vhd|
-Z53 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/comparing.vhd|
+Z45 !s108 1525603606.000000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparing.vhd|
+Z47 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/comparing.vhd|
 !i113 1
 R11
 R12
 Acomparing
 R1
 R2
-DEx4 work 19 comparing_component 0 22 >lVRYHaMOQ[@[U43P=`6T3
+DEx4 work 19 comparing_component 0 22 ]fFIbI_gGR7[H0NPEaS311
 l20
 L12
-Vljk=jCY_AEme3bV;fz:ca3
+Vh?enhg[L?j@^^@f>:XLN51
 !s100 ;8[44Zf[kbK[;nb=@?>d^3
 R6
 32
-R32
+R40
 !i10b 1
-R51
-R52
-R53
+R45
+R46
+R47
 !i113 1
 R11
 R12
 Econtrolunit
-Z54 w1525571668
+Z48 w1525604234
 R1
 R2
 R3
-Z55 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/controlUnit.vhd
-Z56 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/controlUnit.vhd
+Z49 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/controlUnit.vhd
+Z50 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/controlUnit.vhd
 l0
 L4
-V@9[XSHUU90cW34f;P7Uh?0
-!s100 ?g2a8HXHX:S2RLk6_>M_R0
+VeDVLBUd:>RLJ=Z15=22L[3
+!s100 Igj9i<^YF8^>ic_1Z0:5]0
 R6
 32
-Z57 !s110 1525571680
+Z51 !s110 1525617094
 !i10b 1
-Z58 !s108 1525571680.531506
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/controlUnit.vhd|
-Z60 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/controlUnit.vhd|
+Z52 !s108 1525617094.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/controlUnit.vhd|
+Z54 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/controlUnit.vhd|
 !i113 1
 R11
 R12
 Acontrolu
 R1
 R2
-DEx4 work 11 controlunit 0 22 @9[XSHUU90cW34f;P7Uh?0
-l47
+DEx4 work 11 controlunit 0 22 eDVLBUd:>RLJ=Z15=22L[3
+l48
 L18
-VS<o;M_?g1;M?C^`?jjK3R0
-!s100 VOPTKI58jJzQBZm6=5f4I3
+V1d5<HT0dg372zeO0@n<I01
+!s100 ::9dOM]:hm>0RV86XY_`A1
 R6
 32
-R57
+R51
 !i10b 1
-R58
-R59
-R60
+R52
+R53
+R54
 !i113 1
 R11
 R12
 Ecounter
-Z61 w1525400896
-R16
+R0
+R15
 R1
 R2
 R3
-Z62 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/counter.vhd
-Z63 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/counter.vhd
+Z55 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counter.vhd
+Z56 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counter.vhd
 l0
 L5
-VamJcijknVfQSlUFd0=O;70
+V35dm^R_BWl7=IJKKY_D8z0
 !s100 McDfPC`EiH<G7d`GLULAd2
 R6
 32
-R32
+R40
 !i10b 1
-Z64 !s108 1525450043.396700
-Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/counter.vhd|
-Z66 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/counter.vhd|
+R45
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counter.vhd|
+Z58 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counter.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R16
+R15
 R1
 R2
-DEx4 work 7 counter 0 22 amJcijknVfQSlUFd0=O;70
+DEx4 work 7 counter 0 22 35dm^R_BWl7=IJKKY_D8z0
 l14
 L12
-VdZlQWJ2lzJBaU:6?4JBc72
+V1NITFYeXSTkBFMk:Cbg^_2
 !s100 _6?8<m97oCCR`izG4JDGU2
 R6
 32
-R32
+R40
 !i10b 1
-R64
-R65
-R66
+R45
+R57
+R58
 !i113 1
 R11
 R12
 Ecounterint
-Z67 w1525398760
-R16
+R0
+R15
 R1
 R2
 R3
-Z68 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/counterINT.vhd
-Z69 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/counterINT.vhd
+Z59 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counterINT.vhd
+Z60 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counterINT.vhd
 l0
 L4
-V^H3^6LI8;C@YAL?dZkihB3
+VDW@@n9=7mPon64VM=07fY3
 !s100 a]G:mCjTFd5A_M7aTDPmD2
 R6
 32
-R32
+R40
 !i10b 1
-Z70 !s108 1525450043.525522
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/counterINT.vhd|
-Z72 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/counterINT.vhd|
+R45
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counterINT.vhd|
+Z62 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/counterINT.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R16
+R15
 R1
 R2
-DEx4 work 10 counterint 0 22 ^H3^6LI8;C@YAL?dZkihB3
+DEx4 work 10 counterint 0 22 DW@@n9=7mPon64VM=07fY3
 l13
 L11
-Vjlzb9VfFlD^<1Z_BmnL183
+VLA;nBJTb:lI]ef[e@fB;=0
 !s100 5I`WDz8e46K0j[3b8`d8_0
 R6
 32
-R32
+R40
 !i10b 1
-R70
-R71
-R72
+R45
+R61
+R62
 !i113 1
 R11
 R12
 Edecode
-Z73 w1525478302
+Z63 w1525613616
 R1
 R2
 R3
-Z74 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Decode.vhd
-Z75 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Decode.vhd
+Z64 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decode.vhd
+Z65 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decode.vhd
 l0
 L5
-VcC6;k7HOSd7Ai>EQT4nUg0
-!s100 R_gQGaZGRkEoNKUJKhA5G3
+V>ZVeQ5FlNc^=`XAk0JS0Q0
+!s100 lzD]L<O6]Ri>KSk5J<8gN2
 R6
 32
-Z76 !s110 1525478332
+R51
 !i10b 1
-Z77 !s108 1525478332.560160
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Decode.vhd|
-Z79 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Decode.vhd|
+R52
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decode.vhd|
+Z67 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decode.vhd|
 !i113 1
 R11
 R12
 Amy_decode
 R1
 R2
-DEx4 work 6 decode 0 22 cC6;k7HOSd7Ai>EQT4nUg0
-l113
-L45
-VVE>4;fOIN<[08CBE]l=k52
-!s100 @Q9ZG[WjzbFCiighD`e>l0
+DEx4 work 6 decode 0 22 >ZVeQ5FlNc^=`XAk0JS0Q0
+l116
+L48
+VQ6J2nd[4LIa5AzXMaR0A93
+!s100 BjBOcNfkePbbR0DYUdV5n0
 R6
 32
-R76
+R51
 !i10b 1
-R77
-R78
-R79
+R52
+R66
+R67
 !i113 1
 R11
 R12
 Eexecute
-Z80 w1525453034
+Z68 w1525619396
+R13
 R14
 R15
-R16
 R1
 R2
 R3
-Z81 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/execute_module.vhd
-Z82 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/execute_module.vhd
+Z69 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/execute_module.vhd
+Z70 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/execute_module.vhd
 l0
 L6
-V51biJBbHbjHO7AGOKo3QL3
-!s100 L]c7FY[ELXJE:H9M=V7cg2
+V7QT_NeT7gEkfY@CQa6`hh1
+!s100 <z59QWYD8>nEXg2;Az;790
 R6
 32
-R32
+R51
 !i10b 1
-Z83 !s108 1525450043.753619
-Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/execute_module.vhd|
-Z85 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/execute_module.vhd|
+R52
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/execute_module.vhd|
+Z72 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/execute_module.vhd|
 !i113 1
 R11
 R12
 Aexecute_arch
+R13
 R14
 R15
-R16
 R1
 R2
-DEx4 work 7 execute 0 22 51biJBbHbjHO7AGOKo3QL3
-l83
-L45
-V@Y8eLf=D9kW_WQ4A]bRND2
-!s100 [BYb>@gP1DME06YlLQe6d0
+DEx4 work 7 execute 0 22 7QT_NeT7gEkfY@CQa6`hh1
+l85
+L47
+V0Dl<TXM7TMCYQX`C^F44E1
+!s100 :0ieJgggD5?[IIdnOOzKY3
 R6
 32
-R32
+R51
 !i10b 1
-R83
-R84
-R85
+R52
+R71
+R72
 !i113 1
 R11
 R12
 Efetch
-Z86 w1525396324
+Z73 w1525615978
+R13
 R14
 R15
-R16
 R1
 R2
 R3
-Z87 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Fetch_module.vhd
-Z88 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Fetch_module.vhd
+Z74 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Fetch_module.vhd
+Z75 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Fetch_module.vhd
 l0
 L7
-V9nF^XnNZNc6QfmJ[9zTZd0
-!s100 YVPZjflle`g7kJ9>iVd690
+VQH31k]=I?i15]h^NPUSL53
+!s100 Ahz40NZlYEz<2c@OI4iCj3
 R6
 32
-R32
+Z76 !s110 1525617095
 !i10b 1
-Z89 !s108 1525450043.808358
-Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Fetch_module.vhd|
-Z91 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Fetch_module.vhd|
+R52
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Fetch_module.vhd|
+Z78 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Fetch_module.vhd|
 !i113 1
 R11
 R12
 Afetchh
+R13
 R14
 R15
-R16
 R1
 R2
-DEx4 work 5 fetch 0 22 9nF^XnNZNc6QfmJ[9zTZd0
+DEx4 work 5 fetch 0 22 QH31k]=I?i15]h^NPUSL53
 l65
 L19
-V52g[cYfz4PIFi^H@SIQKG3
-!s100 Ho[58Tm:4o99gURDN`@DD1
+V4G?;@R6oeBz[eLANac>_O1
+!s100 dKJ8SD@n1e]=Dg?LVG^533
 R6
 32
-R32
+R76
+!i10b 1
+R52
+R77
+R78
+!i113 1
+R11
+R12
+Eforwarddetect
+R0
+R1
+R2
+R3
+Z79 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/forwardDetect.vhd
+Z80 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/forwardDetect.vhd
+l0
+L5
+V:^S=_g[R@Bm7Wi]=cgBM60
+!s100 f2RQPc^h2=hBSN1j=]H:R3
+R6
+32
+Z81 !s110 1525603608
+!i10b 1
+Z82 !s108 1525603608.000000
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/forwardDetect.vhd|
+Z84 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/forwardDetect.vhd|
+!i113 1
+R11
+R12
+Aforwarding
+R1
+R2
+DEx4 work 13 forwarddetect 0 22 :^S=_g[R@Bm7Wi]=cgBM60
+l43
+L23
+VVD3VGZHXNgZjlVmdd8kbn2
+!s100 RQCSNF`zZEj9hfNDog_S70
+R6
+32
+R81
+!i10b 1
+R82
+R83
+R84
+!i113 1
+R11
+R12
+Eforwardingunit
+Z85 w1525621240
+R1
+R2
+R3
+Z86 8C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\forwardingUnit.vhd
+Z87 FC:\intelFPGA_pro\17.0\Pipelined_Microprocessor\forwardingUnit.vhd
+l0
+L4
+V85E`L_HKILMnmXoUC@Q`^1
+!s100 >g>@oWg:EbmN7HcYJfFBm0
+R6
+32
+Z88 !s110 1525621242
+!i10b 1
+Z89 !s108 1525621242.000000
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\forwardingUnit.vhd|
+Z91 !s107 C:\intelFPGA_pro\17.0\Pipelined_Microprocessor\forwardingUnit.vhd|
+!i113 1
+R11
+R12
+Aforwardunit
+R1
+R2
+Z92 DEx4 work 14 forwardingunit 0 22 85E`L_HKILMnmXoUC@Q`^1
+l65
+L25
+V>EX[Y>OG9Z;gT:]=4iXZT1
+!s100 >[5CjnF`COCBogO7iJ9_60
+R6
+32
+R88
 !i10b 1
 R89
 R90
@@ -600,118 +678,118 @@ R91
 !i113 1
 R11
 R12
-Eforwarddetect
-Z92 w1525549750
+Eid_im
+Z93 w1523814781
 R1
 R2
-R3
-Z93 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardDetect.vhd
-Z94 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardDetect.vhd
+Z94 dC:/intelFPGA_pro/17.0/pipline_project
+Z95 8C:/intelFPGA_pro/17.0/pipline_project/ID_IM.vhd
+Z96 FC:/intelFPGA_pro/17.0/pipline_project/ID_IM.vhd
 l0
-L5
-V``LZ3Z_dY>Wc1Z^EG4RVi0
-!s100 f2RQPc^h2=hBSN1j=]H:R3
+L6
+VFzL2@9INX:MzNZoG`=Ya71
+!s100 zZEUKzMZg7`4M2dDN<96J1
 R6
 32
-!s110 1525565956
+Z97 !s110 1525261652
 !i10b 1
-Z95 !s108 1525565956.850377
-Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardDetect.vhd|
-Z97 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardDetect.vhd|
+Z98 !s108 1525261652.000000
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/pipline_project/ID_IM.vhd|
+Z100 !s107 C:/intelFPGA_pro/17.0/pipline_project/ID_IM.vhd|
 !i113 1
 R11
 R12
-Aforwarding
+Amy_id_im
 R1
 R2
-DEx4 work 13 forwarddetect 0 22 ``LZ3Z_dY>Wc1Z^EG4RVi0
-l43
-L23
-V65HDBB31kK9IdXHdiZ@GC1
-!s100 RQCSNF`zZEj9hfNDog_S70
+DEx4 work 5 id_im 0 22 FzL2@9INX:MzNZoG`=Ya71
+l60
+L18
+Ve1B>UU6W4bRK<k=kAPLfD0
+!s100 z]QIkf1[U@am>e28:mlod1
 R6
 32
-!s110 1525565957
-!i10b 1
-R95
-R96
 R97
+!i10b 1
+R98
+R99
+R100
 !i113 1
 R11
 R12
-Eforwardingunit
-Z98 w1525571860
+Eintcircuit
+R0
+R15
 R1
 R2
 R3
-Z99 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardingUnit.vhd
-Z100 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardingUnit.vhd
+Z101 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitINT.vhd
+Z102 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitINT.vhd
 l0
-L4
-V;bZJzajNIgk69JbiP^bZO3
-!s100 >g>@oWg:EbmN7HcYJfFBm0
+L6
+VhkQ=NEG_EVg0fmTVL;>eI2
+!s100 B?:9Fdgc1kKi>;_@ZifNj3
 R6
 32
-Z101 !s110 1525571865
+R26
 !i10b 1
-Z102 !s108 1525571865.931534
-Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardingUnit.vhd|
-Z104 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/forwardingUnit.vhd|
+R27
+Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitINT.vhd|
+Z104 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitINT.vhd|
 !i113 1
 R11
 R12
-Aforwardunit
+Acircuitint
+R15
 R1
 R2
-DEx4 work 14 forwardingunit 0 22 ;bZJzajNIgk69JbiP^bZO3
-l65
-L25
-V1]4@K^F[5<Xa2H=:7VNUi2
-!s100 7PbiiRTCeUR<j5^HOOcFA3
+DEx4 work 10 intcircuit 0 22 hkQ=NEG_EVg0fmTVL;>eI2
+l41
+L16
+VmaEWEAA`6:Abc;??M=ibD1
+!s100 2c6AzCVa=<9GI7GlMZN=E1
 R6
 32
-R101
+R26
 !i10b 1
-R102
+R27
 R103
 R104
 !i113 1
 R11
 R12
-Eintcircuit
-Z105 w1525296742
-R16
+Eirsignals
+Z105 w1525604448
 R1
 R2
 R3
-Z106 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/circuitINT.vhd
-Z107 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/circuitINT.vhd
+Z106 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/irControlSigs.vhd
+Z107 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/irControlSigs.vhd
 l0
-L6
-VV8jC`Ui6o48:8KLcA1n>]3
-!s100 B?:9Fdgc1kKi>;_@ZifNj3
+L4
+VkIY4;m5c5@4P9Kg[J1k;^1
+!s100 <8Ic8hA4MJY9dkRE3>bgd0
 R6
 32
-R32
+R76
 !i10b 1
-Z108 !s108 1525450043.174365
-Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/circuitINT.vhd|
-Z110 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/circuitINT.vhd|
+Z108 !s108 1525617095.000000
+Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/irControlSigs.vhd|
+Z110 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/irControlSigs.vhd|
 !i113 1
 R11
 R12
-Acircuitint
-R16
+Acontrolir
 R1
 R2
-DEx4 work 10 intcircuit 0 22 V8jC`Ui6o48:8KLcA1n>]3
-l41
-L16
-VAA6E1lEb[Am2N^PlYiA6h1
-!s100 2c6AzCVa=<9GI7GlMZN=E1
+DEx4 work 9 irsignals 0 22 kIY4;m5c5@4P9Kg[J1k;^1
+l60
+L15
+Vmaz9Q3kmkJ5g8Sh>^ZY?B0
+!s100 e:WWP2U_>YD780ceGd=;f2
 R6
 32
-R32
+R76
 !i10b 1
 R108
 R109
@@ -719,791 +797,914 @@ R110
 !i113 1
 R11
 R12
-Eirsignals
-Z111 w1525571736
-R1
-R2
-R3
-Z112 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/irControlSigs.vhd
-Z113 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/irControlSigs.vhd
-l0
-L4
-VKHA8NgSYFOY=Do=:nOmd@0
-!s100 U7fNNRE6AJAGifK7`A:he3
-R6
-32
-Z114 !s110 1525571752
-!i10b 1
-Z115 !s108 1525571752.513612
-Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/irControlSigs.vhd|
-Z117 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/irControlSigs.vhd|
-!i113 1
-R11
-R12
-Acontrolir
-R1
-R2
-DEx4 work 9 irsignals 0 22 KHA8NgSYFOY=Do=:nOmd@0
-l59
-L14
-V:XB@eiDQRM7BgW:I<1BD@1
-!s100 SWn:kYM>hY?8`O:T4:Hd12
-R6
-32
-R114
-!i10b 1
-R115
-R116
-R117
-!i113 1
-R11
-R12
 Ejmpoffset
-Z118 w1525476042
+R0
 R1
 R2
 R3
-Z119 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/jmpOffset.vhd
-Z120 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/jmpOffset.vhd
+Z111 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/jmpOffset.vhd
+Z112 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/jmpOffset.vhd
 l0
 L5
-Vzz>fNn`TzGH?UfFek;AMP3
+VDbUdPQf3KgJO]9bR>a@@C2
 !s100 <E4Z1VGO^J6A<8MEQW]B<2
 R6
 32
-Z121 !s110 1525476052
+R81
 !i10b 1
-Z122 !s108 1525476052.289376
-Z123 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/jmpOffset.vhd|
-Z124 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/jmpOffset.vhd|
+R82
+Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/jmpOffset.vhd|
+Z114 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/jmpOffset.vhd|
 !i113 1
 R11
 R12
 Aoffset
 R1
 R2
-DEx4 work 9 jmpoffset 0 22 zz>fNn`TzGH?UfFek;AMP3
+DEx4 work 9 jmpoffset 0 22 DbUdPQf3KgJO]9bR>a@@C2
 l27
 L14
-V>AXU^37A9?^9Ij4Vh7dVo0
+VY:nOUJ9CY0fcd]PfK5Z:60
 !s100 M493c[bfIUFAG`^9KLQzM0
 R6
 32
-R121
+R81
 !i10b 1
-R122
-R123
-R124
+R82
+R113
+R114
 !i113 1
 R11
 R12
 Ememory
-Z125 w1525296484
+Z115 w1525598656
+R13
 R14
 R15
-R16
 R1
 R2
 R3
-Z126 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Memory_module.vhd
-Z127 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Memory_module.vhd
+Z116 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Memory_module.vhd
+Z117 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Memory_module.vhd
 l0
 L8
-V@jGFmRc>bK0UTlb;A6jb62
-!s100 =2`RKQ@_1mg@o?VS2f5_S0
+Vb?5BK<E46IT8eX]^I9AWH0
+!s100 VH0`E3elXce[EgD2YB8:j1
 R6
 32
-Z128 !s110 1525450044
+R76
 !i10b 1
-Z129 !s108 1525450044.042013
-Z130 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Memory_module.vhd|
-Z131 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Memory_module.vhd|
+R108
+Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Memory_module.vhd|
+Z119 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Memory_module.vhd|
 !i113 1
 R11
 R12
 Amemoryy
+R13
 R14
 R15
-R16
 R1
 R2
-DEx4 work 6 memory 0 22 @jGFmRc>bK0UTlb;A6jb62
-l74
-L24
-VnKNmiXKBL5@AK2NNbK`:f3
-!s100 ?5KkXel2B8=:i=5cQ_S1Z0
+DEx4 work 6 memory 0 22 b?5BK<E46IT8eX]^I9AWH0
+l78
+L28
+VP^73U:<QmOhY;UcC=U5XP0
+!s100 :kHoRX`6@iMmYHSR>6i6I3
 R6
 32
-R128
+R76
 !i10b 1
-R129
-R130
-R131
+R108
+R118
+R119
 !i113 1
 R11
 R12
 Emux2_1
-R13
+R0
 R1
 R2
 R3
-Z132 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux2_1.vhd
-Z133 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux2_1.vhd
+Z120 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux2_1.vhd
+Z121 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux2_1.vhd
 l0
 L4
-V17<e0_DoMkMf5C;D_95nH1
+VSdG0`]IaGSNNiZkHmj5Mk3
 !s100 6GUY_V>Y9gD_f;9=lbV]a2
 R6
 32
-R128
+Z122 !s110 1525603609
 !i10b 1
-Z134 !s108 1525450044.093360
-Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux2_1.vhd|
-Z136 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux2_1.vhd|
+Z123 !s108 1525603609.000000
+Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux2_1.vhd|
+Z125 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux2_1.vhd|
 !i113 1
 R11
 R12
 Amux2_1_a
 R1
 R2
-DEx4 work 6 mux2_1 0 22 17<e0_DoMkMf5C;D_95nH1
+DEx4 work 6 mux2_1 0 22 SdG0`]IaGSNNiZkHmj5Mk3
 l13
 L12
-VX77:C_A5?QbMbM20El6n92
+VJ]G@YhfhEXU>QB9PR5gS`0
 !s100 ;F_MfdXZf=VOSb=dbHfj<1
 R6
 32
-R128
+R122
 !i10b 1
-R134
-R135
-R136
+R123
+R124
+R125
 !i113 1
 R11
 R12
 Emux4
-R13
+R0
 R1
 R2
 R3
-Z137 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux4.vhd
-Z138 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux4.vhd
+Z126 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux4.vhd
+Z127 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux4.vhd
 l0
 L4
-VQmZf<C75_GjR6MN2Ff:611
+Vz?YzieO_DM^a6g;FZVh]z2
 !s100 If^]1Y>SA6>lUAiF6@g<e3
 R6
 32
-R128
+R122
 !i10b 1
-Z139 !s108 1525450044.134458
-Z140 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux4.vhd|
-Z141 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux4.vhd|
+R123
+Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux4.vhd|
+Z129 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux4.vhd|
 !i113 1
 R11
 R12
 Amy_mux4
 R1
 R2
-DEx4 work 4 mux4 0 22 QmZf<C75_GjR6MN2Ff:611
+DEx4 work 4 mux4 0 22 z?YzieO_DM^a6g;FZVh]z2
 l12
 L11
-VDA4MFD[l;k=GQ85c6Lh_N2
+Vg5]=C58MWH0of>jfaz_``3
 !s100 Q5P[E8j^2JLCSN8E2mKIU2
 R6
 32
-R128
+R122
 !i10b 1
-R139
-R140
-R141
+R123
+R128
+R129
 !i113 1
 R11
 R12
 Emux_2x1_1_bit
-R13
+R0
 R1
 R2
 R3
-Z142 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux_2x1_1-bit.vhd
-Z143 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux_2x1_1-bit.vhd
+Z130 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux_2x1_1-bit.vhd
+Z131 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux_2x1_1-bit.vhd
 l0
 L4
-VL2K:aH<bJ2nBMlC:mQkjM0
+Vh6OK^>L6X5LccZD5Be=m63
 !s100 8JA3oO20=hD=nkcNcQS^L2
 R6
 32
-R128
+R122
 !i10b 1
-Z144 !s108 1525450044.178043
-Z145 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux_2x1_1-bit.vhd|
-Z146 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/mux_2x1_1-bit.vhd|
+R82
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux_2x1_1-bit.vhd|
+Z133 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/mux_2x1_1-bit.vhd|
 !i113 1
 R11
 R12
 Amux_2x1_1_bit_a
 R1
 R2
-DEx4 work 13 mux_2x1_1_bit 0 22 L2K:aH<bJ2nBMlC:mQkjM0
+DEx4 work 13 mux_2x1_1_bit 0 22 h6OK^>L6X5LccZD5Be=m63
 l13
 L12
-V[Q:f4@^:Jae:G>^2?Ullf2
+Vj[YG2B0WiKIha9<6;7JM03
 !s100 m2`APKTQNG8km<:Oecbz81
 R6
 32
-R128
+R122
 !i10b 1
-R144
-R145
-R146
+R82
+R132
+R133
 !i113 1
 R11
 R12
 Emy_adder
-R13
+R0
 R1
 R2
 R3
-Z147 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/my_adder.vhd
-Z148 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/my_adder.vhd
+Z134 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_adder.vhd
+Z135 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_adder.vhd
 l0
 L4
-V3eQiih8:M=mnF[gOXhfNc3
+VK^k3Zi`3ef<dX9KVL8DG71
 !s100 9BMZ9Z3Dd3JZh7Dk_nHcT2
 R6
 32
-R128
+R122
 !i10b 1
-Z149 !s108 1525450044.219962
-Z150 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/my_adder.vhd|
-Z151 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/my_adder.vhd|
+R123
+Z136 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_adder.vhd|
+Z137 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_adder.vhd|
 !i113 1
 R11
 R12
 Aa_my_adder
 R1
 R2
-DEx4 work 8 my_adder 0 22 3eQiih8:M=mnF[gOXhfNc3
+DEx4 work 8 my_adder 0 22 K^k3Zi`3ef<dX9KVL8DG71
 l10
 L9
-VJiG=WT`32?EIcj685OBK;1
+V6^cOIRT:YY3o`>=<F3n<B1
 !s100 Bk@iZ`F>YMOLSIF`KD8Xh2
 R6
 32
-R128
+R122
 !i10b 1
-R149
-R150
-R151
+R123
+R136
+R137
 !i113 1
 R11
 R12
 Emy_dec8
-Z152 w1525268548
+R0
 R1
 R2
 R3
-Z153 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Decoder_8.vhd
-Z154 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Decoder_8.vhd
+Z138 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decoder_8.vhd
+Z139 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decoder_8.vhd
 l0
 L4
-V33SRHDE072>SU3>H;SOmo0
+VLjm<OGV8`9?9]nGA;hDP<0
 !s100 =NLhRfkOZZcdVScn2Mo_32
 R6
 32
-R32
+Z140 !s110 1525603607
 !i10b 1
-Z155 !s108 1525450043.626628
-Z156 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Decoder_8.vhd|
-Z157 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/Decoder_8.vhd|
+Z141 !s108 1525603607.000000
+Z142 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decoder_8.vhd|
+Z143 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/Decoder_8.vhd|
 !i113 1
 R11
 R12
 Aa_my_dec8
 R1
 R2
-DEx4 work 7 my_dec8 0 22 33SRHDE072>SU3>H;SOmo0
+DEx4 work 7 my_dec8 0 22 Ljm<OGV8`9?9]nGA;hDP<0
 l11
 L10
-VWjV?0GLZ1QEK7:?5;oNj;3
+V7[CzSfDLK0YE1k^^0N?da2
 !s100 hh_NbY5LL_E@COUo^`_N^0
 R6
 32
-R32
+R140
 !i10b 1
-R155
-R156
-R157
+R141
+R142
+R143
 !i113 1
 R11
 R12
 Emy_dff
-Z158 w1525296126
+R0
 R1
 R2
 R3
-Z159 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/DFF.vhd
-Z160 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/DFF.vhd
+Z144 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF.vhd
+Z145 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF.vhd
 l0
 L4
-V?F[Kf5S5@9:N5ePoB]]=C0
+VjRM@bAKX?Q`Bhg[>K?RmM2
 !s100 >K@:=EQSG<bmKUi>A>C^Z2
 R6
 32
-R32
+R140
 !i10b 1
-Z161 !s108 1525450043.668333
-Z162 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/DFF.vhd|
-Z163 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/DFF.vhd|
+R141
+Z146 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF.vhd|
+Z147 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF.vhd|
 !i113 1
 R11
 R12
 Aa_my_dff
 R1
 R2
-DEx4 work 6 my_dff 0 22 ?F[Kf5S5@9:N5ePoB]]=C0
+DEx4 work 6 my_dff 0 22 jRM@bAKX?Q`Bhg[>K?RmM2
 l9
 L8
-V:::`fGPTh3BjH@76SebzZ2
+Vz2efFkdTP5IMRZ^6;=J:O0
 !s100 n_Re8[25A37i6;eVjib9l3
 R6
 32
-R32
+R140
 !i10b 1
-R161
-R162
-R163
+R141
+R146
+R147
 !i113 1
 R11
 R12
 Emy_dff_rise
-Z164 w1525455096
+R0
 R1
 R2
 R3
-Z165 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/DFF_rise.vhd
-Z166 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/DFF_rise.vhd
+Z148 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF_rise.vhd
+Z149 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF_rise.vhd
 l0
 L4
-VMUkD>fRSmc1In:b]k8^]L2
+Vn<eT7Y;9foGeo_KfZRGiW1
 !s100 L[;DPIXOIoY5n3117X5o]3
 R6
 32
-R32
+R140
 !i10b 1
-Z167 !s108 1525450043.711689
-Z168 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/DFF_rise.vhd|
-Z169 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/DFF_rise.vhd|
+R141
+Z150 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF_rise.vhd|
+Z151 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/DFF_rise.vhd|
 !i113 1
 R11
 R12
 Aa_my_dff_rise
 R1
 R2
-DEx4 work 11 my_dff_rise 0 22 MUkD>fRSmc1In:b]k8^]L2
+DEx4 work 11 my_dff_rise 0 22 n<eT7Y;9foGeo_KfZRGiW1
 l9
 L8
-V^MhUMe<_Zg4]WES@EH`KQ3
+V=LEfioIiom=NY[R=liGod3
 !s100 0W0ZW6SB[;8P9bk@a1N]40
 R6
 32
-R32
+R140
 !i10b 1
-R167
-R168
-R169
+R141
+R150
+R151
 !i113 1
 R11
 R12
 Emy_nadder
-R13
+R0
 R1
 R2
 R3
-Z170 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/my_nadder.vhd
-Z171 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/my_nadder.vhd
+Z152 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_nadder.vhd
+Z153 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_nadder.vhd
 l0
 L4
-VLj7^]gNR;QcL?NOR9CkTD0
+Vk=7Gdg@PnzG]@cgLd;?AS1
 !s100 JTBY]KEj:4iea7l4HQ5de1
 R6
 32
-R128
+R122
 !i10b 1
-Z172 !s108 1525450044.264559
-Z173 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/my_nadder.vhd|
-Z174 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/my_nadder.vhd|
+R123
+Z154 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_nadder.vhd|
+Z155 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/my_nadder.vhd|
 !i113 1
 R11
 R12
 Aa_my_nadder
 R1
 R2
-DEx4 work 9 my_nadder 0 22 Lj7^]gNR;QcL?NOR9CkTD0
+DEx4 work 9 my_nadder 0 22 k=7Gdg@PnzG]@cgLd;?AS1
 l21
 L13
-Vo[6FWEOiEoA]1P]gAKNd22
+VWRfg^Q2U[Y9KISf<MAAge1
 !s100 D=P3jL`zNh[kAcE>70_oI1
 R6
 32
-R128
+R122
 !i10b 1
-R172
-R173
-R174
+R123
+R154
+R155
 !i113 1
 R11
 R12
 Emy_ndff
-R13
+R0
 R1
 R2
 R3
-Z175 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register_rising.vhd
-Z176 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register_rising.vhd
+Z156 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_rising.vhd
+Z157 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_rising.vhd
 l0
 L4
-VlDiQR835iJcjnVgf=^Gco0
+V=O5@:f_][hK<X>=V3Z=842
 !s100 BG=z=BkMXZ4e8jLO@>9DX2
 R6
 32
-R128
+Z158 !s110 1525603610
 !i10b 1
-Z177 !s108 1525450044.631134
-Z178 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register_rising.vhd|
-Z179 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register_rising.vhd|
+Z159 !s108 1525603610.000000
+Z160 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_rising.vhd|
+Z161 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_rising.vhd|
 !i113 1
 R11
 R12
 Aa_my_ndff
 R1
 R2
-DEx4 work 7 my_ndff 0 22 lDiQR835iJcjnVgf=^Gco0
+DEx4 work 7 my_ndff 0 22 =O5@:f_][hK<X>=V3Z=842
 l12
 L11
-V@fVcWK;P<_9nRbBnL6UO;1
+V_86^UCQ3TE^8P[09SlI:23
 !s100 6ReeXOb]3Ya44l]]T:kO13
 R6
 32
-R128
+R158
 !i10b 1
-R177
-R178
-R179
+R159
+R160
+R161
+!i113 1
+R11
+R12
+Emy_ndff2
+Z162 w1522870577
+R1
+R2
+R94
+Z163 8C:/intelFPGA_pro/17.0/pipline_project/register_falling.vhd
+Z164 FC:/intelFPGA_pro/17.0/pipline_project/register_falling.vhd
+l0
+L4
+V_1[X@SFa4;3HNB[R@T<Th0
+!s100 FmdSzbZNWh?BAzM<nW@om1
+R6
+32
+Z165 !s110 1523806901
+!i10b 1
+Z166 !s108 1523806901.000000
+Z167 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/pipline_project/register_falling.vhd|
+Z168 !s107 C:/intelFPGA_pro/17.0/pipline_project/register_falling.vhd|
+!i113 1
+R11
+R12
+Aa_my_ndff2
+R1
+R2
+DEx4 work 8 my_ndff2 0 22 _1[X@SFa4;3HNB[R@T<Th0
+l12
+L11
+VWBI4d8]bG3^j8QJlZP4b;3
+!s100 Je6h6GQ_RaD]3:XgY5;8`3
+R6
+32
+R165
+!i10b 1
+R166
+R167
+R168
 !i113 1
 R11
 R12
 Emy_ndff3
-R13
+R0
 R1
 R2
 R3
-Z180 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register2.vhd
-Z181 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register2.vhd
+Z169 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register2.vhd
+Z170 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register2.vhd
 l0
 L5
-V2^4`mB9KW_C5RDMiZKElU1
+VF>JVQ3_VH]@b@Z7HQ8VhE2
 !s100 SIUi<jBjC]:]7C3B]l3UJ1
 R6
 32
-R128
+R158
 !i10b 1
-Z182 !s108 1525450044.495968
-Z183 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register2.vhd|
-Z184 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register2.vhd|
+R159
+Z171 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register2.vhd|
+Z172 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register2.vhd|
 !i113 1
 R11
 R12
 Aa_my_ndff3
 R1
 R2
-DEx4 work 8 my_ndff3 0 22 2^4`mB9KW_C5RDMiZKElU1
+DEx4 work 8 my_ndff3 0 22 F>JVQ3_VH]@b@Z7HQ8VhE2
 l13
 L11
-V`eObFdijgc<Fn49AYXzbT0
+V6EB6PUTb=WQFiMS[KP[X@1
 !s100 X[lJo4hC4Ndd2l?7>;GUU1
 R6
 32
-R128
+R158
 !i10b 1
-R182
-R183
-R184
+R159
+R171
+R172
 !i113 1
 R11
 R12
 Emy_ndff_fall
-R13
+R0
 R1
 R2
 R3
-Z185 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register_falling.vhd
-Z186 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register_falling.vhd
+Z173 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_falling.vhd
+Z174 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_falling.vhd
 l0
 L4
-V2`F;>iliHSN82dKa_;J441
+VIg=cocYE<1L@4eNl=Y1[[3
 !s100 dnY4Vi3[9O;28zHKO>_UU3
 R6
 32
-R128
+R158
 !i10b 1
-Z187 !s108 1525450044.540563
-Z188 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register_falling.vhd|
-Z189 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/register_falling.vhd|
+R159
+Z175 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_falling.vhd|
+Z176 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/register_falling.vhd|
 !i113 1
 R11
 R12
 Aa_my_ndff_fall
 R1
 R2
-DEx4 work 12 my_ndff_fall 0 22 2`F;>iliHSN82dKa_;J441
+DEx4 work 12 my_ndff_fall 0 22 Ig=cocYE<1L@4eNl=Y1[[3
 l12
 L11
-Vi_KY95YeS_Y`TG9d=dNkh0
+V]EXzJi55adDUi]8oMT^c:2
 !s100 H2B=eMgkoTeOb3D2D1YH51
 R6
 32
-R128
+R158
 !i10b 1
-R187
-R188
-R189
+R159
+R175
+R176
 !i113 1
 R11
 R12
 Emy_ndff_sp
+R0
 R13
 R14
-R15
 R1
 R2
 R3
-Z190 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/sp_reg.vhd
-Z191 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/sp_reg.vhd
+Z177 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/sp_reg.vhd
+Z178 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/sp_reg.vhd
 l0
 L5
-Vg6jL^l:S>fN5X<d?ea?f]2
+VR>[hFdO^jVPSX@`ePN3=d1
 !s100 >z1eoddgK4JNfi20MNLiX2
 R6
 32
-R128
+Z179 !s110 1525603611
 !i10b 1
-Z192 !s108 1525450044.674411
-Z193 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/sp_reg.vhd|
-Z194 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/sp_reg.vhd|
+R159
+Z180 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/sp_reg.vhd|
+Z181 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/sp_reg.vhd|
 !i113 1
 R11
 R12
 Aa_my_ndff_sp
+R13
 R14
-R15
 R1
 R2
-DEx4 work 10 my_ndff_sp 0 22 g6jL^l:S>fN5X<d?ea?f]2
+DEx4 work 10 my_ndff_sp 0 22 R>[hFdO^jVPSX@`ePN3=d1
 l13
 L12
-VZd4I7<?XRC:h5Zgia`mj>1
+V<]3L^V;Lk_R8:5KFmzSFX3
 !s100 RW`FS9<hBAMR36ek7U[m51
 R6
 32
-R128
+R179
 !i10b 1
-R192
-R193
-R194
+R159
+R180
+R181
 !i113 1
 R11
 R12
 Epipeline
-Z195 w1525570464
+Z182 w1525617769
 R1
 R2
 R3
-Z196 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd
-Z197 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd
+Z183 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/pipeline.vhd
+Z184 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/pipeline.vhd
 l0
 L4
-V?7nh^_O2nAMoD;@IMh2J52
+VA06C4]fZ@882iGnJ8E]zz0
 !s100 J7HC`UiaM5ZK5XAZ^9^0V1
 R6
 32
-R101
+Z185 !s110 1525621005
 !i10b 1
-!s108 1525571865.979798
-Z198 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd|
-!s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd|
+Z186 !s108 1525621005.000000
+Z187 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/pipeline.vhd|
+Z188 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/pipeline.vhd|
 !i113 1
 R11
 R12
 Aa_pipeline
 R1
 R2
-DEx4 work 8 pipeline 0 22 ?7nh^_O2nAMoD;@IMh2J52
-l231
+DEx4 work 8 pipeline 0 22 A06C4]fZ@882iGnJ8E]zz0
+l255
 L11
-V1Gg;zEDWZ`EzgzQO<[^YT1
-!s100 F:LcEACLPaCCkQ4KkJX`T3
+Vgi0;D@eRekoFT99gaOSm92
+!s100 1QmV_j_IScb18TASM0dFT2
 R6
 32
-R128
+R185
 !i10b 1
-!s108 1525450044.311486
-R198
-!s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/pipeline.vhd|
+R186
+R187
+R188
 !i113 1
 R11
 R12
 Er_type
-Z199 w1525565946
+R0
 R1
 R2
 R3
-Z200 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/R_Type.vhd
-Z201 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/R_Type.vhd
+Z189 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/R_Type.vhd
+Z190 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/R_Type.vhd
 l0
 L4
-VobN_lRoz3F^jGYBR=`0kb0
+VW2zb0<m?LkYK:RDREH9MX1
 !s100 gJe8e@ZA;D9_c^m33EA`E2
 R6
 32
-Z202 !s110 1525569868
+R158
 !i10b 1
-Z203 !s108 1525569868.128954
-Z204 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/R_Type.vhd|
-Z205 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/R_Type.vhd|
+R159
+Z191 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/R_Type.vhd|
+Z192 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/R_Type.vhd|
 !i113 1
 R11
 R12
 Asrcdstrtype
 R1
 R2
-DEx4 work 6 r_type 0 22 obN_lRoz3F^jGYBR=`0kb0
+DEx4 work 6 r_type 0 22 W2zb0<m?LkYK:RDREH9MX1
 l31
 L19
-V2?SiZWCI3Jk59:DTV24aC1
+V3mR999>V6=0?2kRLRclcd3
 !s100 T?C4:;^[E@`<H@Xd8CfXP1
 R6
 32
-R202
+R158
 !i10b 1
-R203
-R204
-R205
+R159
+R191
+R192
 !i113 1
 R11
 R12
 Er_type_component
-Z206 w1525546722
+R0
 R1
 R2
 R3
-Z207 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/R_type_component.vhd
-Z208 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/R_type_component.vhd
+Z193 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/R_type_component.vhd
+Z194 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/R_type_component.vhd
 l0
 L4
-Vz<jhETNGB1ATo[`SAI24J0
+Vc030GiS9KCmlJF_L35=<O3
 !s100 SEPo0W:?TX;U[Kc0i:kPh2
 R6
 32
-Z209 !s110 1525546725
+R158
 !i10b 1
-Z210 !s108 1525546725.261150
-Z211 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/R_type_component.vhd|
-Z212 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/R_type_component.vhd|
+R159
+Z195 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/R_type_component.vhd|
+Z196 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/R_type_component.vhd|
 !i113 1
 R11
 R12
 Atobuff
 R1
 R2
-DEx4 work 16 r_type_component 0 22 z<jhETNGB1ATo[`SAI24J0
+DEx4 work 16 r_type_component 0 22 c030GiS9KCmlJF_L35=<O3
 l33
 L15
-Vj5B5<3W^_>P^A5E@5<YPG0
+VeYnD;nP4K8XadBU:J=[ZM1
 !s100 AP3T0d25fL]l:@bc^Ea_U1
 R6
 32
-R209
+R158
 !i10b 1
-R210
-R211
-R212
+R159
+R195
+R196
 !i113 1
 R11
 R12
 Eram
-R13
-R16
+R0
+R15
 R1
 R2
 R3
-Z213 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/ram.vhd
-Z214 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/ram.vhd
+Z197 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/ram.vhd
+Z198 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/ram.vhd
 l0
 L5
-VZTSTbSa=:MFHQBeW`lYBj3
+V8X]>D9JjH]ho_l@BZ@W3O1
 !s100 gZ?JYIN>mB9IART9X>kZe2
 R6
 32
-R128
+R158
 !i10b 1
-Z215 !s108 1525450044.448487
-Z216 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/ram.vhd|
-Z217 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/ram.vhd|
+R159
+Z199 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/ram.vhd|
+Z200 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/ram.vhd|
 !i113 1
 R11
 R12
 Asyncrama
-R16
+R15
 R1
 R2
-DEx4 work 3 ram 0 22 ZTSTbSa=:MFHQBeW`lYBj3
+DEx4 work 3 ram 0 22 8X]>D9JjH]ho_l@BZ@W3O1
 l33
 L14
-VzJe31e6Hhg@mZ>EZ968R83
+VFBflDlMnN35ToKU6;Tna40
 !s100 VEhl42W7gO;@W<D=14aoG1
 R6
 32
-R128
+R158
 !i10b 1
-R215
-R216
-R217
+R159
+R199
+R200
+!i113 1
+R11
+R12
+Ereg_file
+Z201 w1523815248
+R1
+R2
+R94
+Z202 8C:/intelFPGA_pro/17.0/pipline_project/Register_file.vhd
+Z203 FC:/intelFPGA_pro/17.0/pipline_project/Register_file.vhd
+l0
+L5
+V7iJ6o2n>IfQnTVji]2Jjl1
+!s100 ]KMH?zN[M>UaGC4G1id9;0
+R6
+32
+Z204 !s110 1523815254
+!i10b 1
+Z205 !s108 1523815254.000000
+Z206 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/pipline_project/Register_file.vhd|
+Z207 !s107 C:/intelFPGA_pro/17.0/pipline_project/Register_file.vhd|
+!i113 1
+R11
+R12
+Amy_reg_file
+R1
+R2
+DEx4 work 8 reg_file 0 22 7iJ6o2n>IfQnTVji]2Jjl1
+l57
+L18
+VhdP<7;`SIc2o^D<4nzJii2
+!s100 K@Ldf]NWhJSa>QJ[gkY@_3
+R6
+32
+R204
+!i10b 1
+R205
+R206
+R207
 !i113 1
 R11
 R12
 Ertcircuit
-Z218 w1525400734
+R0
 R1
 R2
 R3
-Z219 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/circuitRT.vhd
-Z220 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/circuitRT.vhd
+Z208 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitRT.vhd
+Z209 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitRT.vhd
 l0
 L5
-VWo5PR?UPz]FBhk:@==8E52
+VEm5E@l;gIQU19FdO0HL?f0
 !s100 6UE26UZHZ2FXnkib1YI263
 R6
 32
-R32
+R26
 !i10b 1
-Z221 !s108 1525450043.222345
-Z222 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/circuitRT.vhd|
-Z223 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/circuitRT.vhd|
+R27
+Z210 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitRT.vhd|
+Z211 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/circuitRT.vhd|
 !i113 1
 R11
 R12
 Acircuitrt
 R1
 R2
-DEx4 work 9 rtcircuit 0 22 Wo5PR?UPz]FBhk:@==8E52
+DEx4 work 9 rtcircuit 0 22 Em5E@l;gIQU19FdO0HL?f0
 l31
 L13
-V<JEbi3K`BV]fC<fZcDQ;b0
+V<E[R^KRoC5W4`3jgPAIkW2
 !s100 U9FXkPa<[ZkhYzoFIMkdh1
 R6
 32
-R32
+R26
+!i10b 1
+R27
+R210
+R211
+!i113 1
+R11
+R12
+Etest
+Z212 w1523888551
+R13
+R14
+R15
+R1
+R2
+R94
+Z213 8C:/intelFPGA_pro/17.0/pipline_project/test.vhd
+Z214 FC:/intelFPGA_pro/17.0/pipline_project/test.vhd
+l0
+L9
+V^1_kjTT1C:2Qj=8<He37Y1
+!s100 NHekO9i8gcP^30@N;Ugaz2
+R6
+32
+Z215 !s110 1525261655
+!i10b 1
+Z216 !s108 1525261655.000000
+Z217 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/pipline_project/test.vhd|
+Z218 !s107 C:/intelFPGA_pro/17.0/pipline_project/test.vhd|
+!i113 1
+R11
+R12
+Atestt
+R13
+R14
+R15
+R1
+R2
+DEx4 work 4 test 0 22 ^1_kjTT1C:2Qj=8<He37Y1
+l68
+L19
+V5dLHUIi@H=Rf]zIlhEV=L1
+!s100 ^amz[1^<zS1fY_OPIa`In2
+R6
+32
+R215
+!i10b 1
+R216
+R217
+R218
+!i113 1
+R11
+R12
+Etristatebuff
+R0
+R1
+R2
+R3
+Z219 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/tristateBuff.vhd
+Z220 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/tristateBuff.vhd
+l0
+L5
+VC:;Ll3Fm^bL??<AU3CbB^2
+!s100 gGN6z^=N6?QAS1TW:@]OA0
+R6
+32
+R179
+!i10b 1
+Z221 !s108 1525603611.000000
+Z222 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/tristateBuff.vhd|
+Z223 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/tristateBuff.vhd|
+!i113 1
+R11
+R12
+Aa_tristatebuff
+R1
+R2
+DEx4 work 12 tristatebuff 0 22 C:;Ll3Fm^bL??<AU3CbB^2
+l15
+L14
+VLOjlNdYUJ]mnEl@gLHD3b1
+!s100 cf0__jUg:;MmDS6Lz8WLb1
+R6
+32
+R179
 !i10b 1
 R221
 R222
@@ -1511,81 +1712,42 @@ R223
 !i113 1
 R11
 R12
-Etristatebuff
-R13
-R1
-R2
-R3
-Z224 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/tristateBuff.vhd
-Z225 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/tristateBuff.vhd
-l0
-L5
-VC20?LT<ehPS5FNoX29BfA1
-!s100 gGN6z^=N6?QAS1TW:@]OA0
-R6
-32
-R128
-!i10b 1
-Z226 !s108 1525450044.721274
-Z227 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/tristateBuff.vhd|
-Z228 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/tristateBuff.vhd|
-!i113 1
-R11
-R12
-Aa_tristatebuff
-R1
-R2
-DEx4 work 12 tristatebuff 0 22 C20?LT<ehPS5FNoX29BfA1
-l15
-L14
-Ve`b18m`RKV6XWEcU@]gaU3
-!s100 cf0__jUg:;MmDS6Lz8WLb1
-R6
-32
-R128
-!i10b 1
-R226
-R227
-R228
-!i113 1
-R11
-R12
 Ewb
-R13
+Z224 w1525598544
 R1
 R2
 R3
-Z229 8/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/WB.vhd
-Z230 F/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/WB.vhd
+Z225 8C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/WB.vhd
+Z226 FC:/intelFPGA_pro/17.0/Pipelined_Microprocessor/WB.vhd
 l0
 L5
-VQLYOBB4QX42YEbT`nO7D]3
-!s100 I9?T2]`XnCYAagjIS8MO82
+V7jV;=8:FjRjI_3``6WzA[3
+!s100 0><6KE:74C0B>d<ibVZQF3
 R6
 32
-R128
+R51
 !i10b 1
-Z231 !s108 1525450044.763817
-Z232 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/WB.vhd|
-Z233 !s107 /home/fatema/Desktop/College/Third year/Second Term/Arch/project/Pipelined_Microprocessor/WB.vhd|
+R52
+Z227 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/WB.vhd|
+Z228 !s107 C:/intelFPGA_pro/17.0/Pipelined_Microprocessor/WB.vhd|
 !i113 1
 R11
 R12
 Amy_wb
 R1
 R2
-DEx4 work 2 wb 0 22 QLYOBB4QX42YEbT`nO7D]3
-l34
-L14
-Vf?[4P;_AnT[Y?AjgU01zT2
-!s100 FF[TCF2]4Jzn7YdMm;nMX1
+DEx4 work 2 wb 0 22 7jV;=8:FjRjI_3``6WzA[3
+l35
+L15
+VDje:On@@9E0j]82DJ;GKC3
+!s100 CKjSaD1HYz3TVW55>JWoz3
 R6
 32
-R128
+R51
 !i10b 1
-R231
-R232
-R233
+R52
+R227
+R228
 !i113 1
 R11
 R12

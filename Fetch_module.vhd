@@ -11,7 +11,7 @@ ENTITY fetch IS
            pc_mem,Rdst_buf_ie_im,Rdst,IN_Port,Imm_val_ID_IE : IN std_logic_vector(15 DOWNTO 0);
           counter: IN std_logic_vector(2 DOWNTO 0);
 counter_RT: IN std_logic_vector(1 DOWNTO 0);
-            ir_fetch,ir_buf,pc_call,pc_to_int: out std_logic_vector(15 DOWNTO 0)
+            ir_fetch,ir_buf,pc_call,pc_to_int,in_port_IF_ID: out std_logic_vector(15 DOWNTO 0)
            ); 
 		
 END fetch;
@@ -94,19 +94,12 @@ pc_mux2: mux2_1 port map(pc_inc,pc_mux3_out,pc_mux2_s,pc_mux2_out);
 pc_mux3: mux2_1 port map(Rdst_buf_ie_im,pc_mux4_out,pc_mux3_s,pc_mux3_out);
 
 
---------------------------- feryal added dol 34an el LDM wel IN case ------------------
-pc_mux4: mux2_1 port map(Rdst,pc_mux5_out,IN_OR_LDM_ID_IE,pc_mux4_out);
-pc_mux5: mux2_1 port map(IN_Port,Imm_val_ID_IE,LDM_ID_IE,pc_mux5_out);
-
-
-----------------------------------------------------------------------------
-
-
 rst_ir_buf <= counter_1_2_3 or counter_rt_1_2 or jmp_cond or imm_buf or Reset;
 rst_pcc_cal <= jmp_cond or Reset;
 ir_buf_en<= "not"(stall_ld) or Reset;
 irr_buf: my_nDFF_fall port map(Clk,rst_ir_buf,"not"(stall_ld),ir,ir_buf);
 pcc_call: my_nDFF port map(Clk,rst_pcc_cal,'1',pc_inc,pc_call);
+inn_port: my_nDFF port map(Clk,'0','1',IN_Port,in_port_IF_ID);
 
 
 END fetchh;

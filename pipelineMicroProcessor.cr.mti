@@ -1,0 +1,408 @@
+C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/circuitINT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/circuitINT.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity intCircuit
+-- Compiling architecture circuitINT of intCircuit
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_partMul.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_partMul.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity alu_partMul
+-- Compiling architecture alu_partMul_arch of alu_partMul
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/execute_module.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/execute_module.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity execute
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/execute_module.vhd(18): (vcom-1294) Declaration with designator "rtype_ID_IE" already exists in this region.
+** =====> Prior declaration of "rType_ID_IE" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/execute_module.vhd(9).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/execute_module.vhd(41): (vcom-1294) Declaration with designator "rType_IE_IM" already exists in this region.
+** =====> Prior declaration of "rtype_IE_IM" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/execute_module.vhd(24).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/execute_module.vhd(42): VHDL Compiler exiting
+
+} {10.0 11.0 12.0 13.0 14.0 15.0} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/DFF.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/DFF.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_DFF
+-- Compiling architecture a_my_DFF of my_DFF
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/counter.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/counter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counter
+-- Compiling architecture Behavioral of Counter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/comparator.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/comparator.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparator
+-- Compiling architecture comparing of comparator
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/controlUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/controlUnit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity controlUnit
+-- Compiling architecture controlU of controlUnit
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/circuitRT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/circuitRT.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity rtCircuit
+-- Compiling architecture circuitRT of rtCircuit
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_with_flags.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_with_flags.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity alu_with_flags
+-- Compiling architecture alu_with_flags_arch of alu_with_flags
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/irControlSigs.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/irControlSigs.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity irSignals
+-- Compiling architecture controlIR of irSignals
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/R_Type.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/R_Type.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity R_type
+-- Compiling architecture SrcDstRType of R_type
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/my_nadder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/my_nadder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nadder
+-- Compiling architecture a_my_nadder of my_nadder
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/R_type_component.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/R_type_component.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity R_type_component
+-- Compiling architecture toBuff of R_type_component
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity pipeline
+-- Compiling architecture a_pipeline of pipeline
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(37): (vcom-1294) Declaration with designator "rtype_cu" already exists in this region.
+** =====> Prior declaration of "rType_cu" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(29).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(52): (vcom-1294) Declaration with designator "IN_OR_LDM_cu" already exists in this region.
+** =====> Prior declaration of "IN_OR_LDM_cu" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(29).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(52): (vcom-1294) Declaration with designator "LDM_cu" already exists in this region.
+** =====> Prior declaration of "LDM_cu" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(29).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(62): (vcom-1294) Declaration with designator "rType_ID_IE" already exists in this region.
+** =====> Prior declaration of "rtype_ID_IE" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(42).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(62): (vcom-1294) Declaration with designator "LDM_ID_IE" already exists in this region.
+** =====> Prior declaration of "LDM_ID_IE" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(53).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(62): (vcom-1294) Declaration with designator "IN_OR_LDM_ID_IE" already exists in this region.
+** =====> Prior declaration of "IN_OR_LDM_ID_IE" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(53).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(77): (vcom-1294) Declaration with designator "rtype_ID_IE" already exists in this region.
+** =====> Prior declaration of "rType_ID_IE" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(68).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(100): (vcom-1294) Declaration with designator "rType_IE_IM" already exists in this region.
+** =====> Prior declaration of "rtype_IE_IM" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(83).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(242): (vcom-1294) Declaration with designator "rType_ID_IE_sig" already exists in this region.
+** =====> Prior declaration of "rtype_ID_IE_sig" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(224).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(242): (vcom-1294) Declaration with designator "rType_IE_IM_sig" already exists in this region.
+** =====> Prior declaration of "rtype_IE_IM_sig" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(224).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(242): (vcom-1294) Declaration with designator "rType_cu_sig" already exists in this region.
+** =====> Prior declaration of "rtype_cu_sig" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(224).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(242): (vcom-1294) Declaration with designator "LDM_cu_sig" already exists in this region.
+** =====> Prior declaration of "LDM_cu_sig" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(230).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(242): (vcom-1294) Declaration with designator "LDM_ID_IE_sig" already exists in this region.
+** =====> Prior declaration of "LDM_ID_IE_sig" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(230).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(242): (vcom-1294) Declaration with designator "IN_OR_LDM_cu_sig" already exists in this region.
+** =====> Prior declaration of "IN_OR_LDM_cu_sig" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(230).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(242): (vcom-1294) Declaration with designator "IN_OR_LDM_ID_IE_sig" already exists in this region.
+** =====> Prior declaration of "IN_OR_LDM_ID_IE_sig" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(230).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(267): Signal "counter_RT_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(271): Signal "write_en_Rsrc_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(271): Signal "write_en_Rdst_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(271): Signal "writeEnrDst_ecxept_LDM_IN_DE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(271): Signal "write_en_Rdst_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(271): Signal "twoOp_cu_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(274): Signal "mem_read_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(274): Signal "mem_read_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(274): Signal "write_en_Rsrc_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(274): Signal "rType_ID_IE_sig" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(274): Signal "Clk" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(274): Signal "Rst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): Signal "Exec_Result_H_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): Signal "Exec_Result_L_IE_IM_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): Signal "mem_result_IM_IW_sig" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): Signal "Rsrc_buf_FU" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): Signal "Rdst_buf_FU" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "LDD_EM" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "POP_DE" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "twoOperand" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "memReadEM" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "memReadDE" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "writeEnrDstEM" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "writeEnrSrcMW" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "writeEnrDstDE" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "writeEnrSrcEM" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "writeEnrDstIR" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(275): (vcom-1035) Formal port "writeEnrSrcIR" has OPEN or no actual associated with it.
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/pipeline.vhd(328): VHDL Compiler exiting
+
+} {8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 21.0 22.0 23.0 24.0 25.0 26.0 27.0 28.0 29.0 30.0 31.0 32.0 33.0 34.0 35.0 36.0 37.0 38.0 67.0} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/mux4.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/mux4.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux4
+-- Compiling architecture my_mux4 of mux4
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/jmpOffset.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/jmpOffset.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity jmpOffset
+-- Compiling architecture offset of jmpOffset
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/forwardDetect.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/forwardDetect.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity forwardDetect
+-- Compiling architecture forwarding of forwardDetect
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/register2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/register2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nDFF3
+-- Compiling architecture a_my_nDFF3 of my_nDFF3
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/test.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/test.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity test
+-- Compiling architecture testt of test
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/sp_reg.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/sp_reg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity my_nDFF_sp
+-- Compiling architecture a_my_nDFF_sp of my_nDFF_sp
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/register_rising.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/register_rising.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nDFF
+-- Compiling architecture a_my_nDFF of my_nDFF
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/ram.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/ram.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram
+-- Compiling architecture syncrama of ram
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/mux_2x1_1-bit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/mux_2x1_1-bit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux_2x1_1_bit
+-- Compiling architecture mux_2x1_1_bit_a of mux_2x1_1_bit
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/comparing.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/comparing.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparing_component
+-- Compiling architecture comparing of comparing_component
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_integ.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_integ.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity alu_integ
+-- Compiling architecture alu_integ_arch of alu_integ
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/register_falling.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/register_falling.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nDFF_fall
+-- Compiling architecture a_my_nDFF_fall of my_nDFF_fall
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_partA.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_partA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity alu_partA
+-- Compiling architecture alu_partA_arch of alu_partA
+** Warning: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_partA.vhd(36): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/ID_IM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/ID_IM.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ID_IM
+-- Compiling architecture my_ID_IM of ID_IM
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/DFF_rise.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/DFF_rise.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_DFF_rise
+-- Compiling architecture a_my_DFF_rise of my_DFF_rise
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_partB.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_partB.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity alu_partB
+-- Compiling architecture alu_partB_arch of alu_partB
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/tristateBuff.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/tristateBuff.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tristatebuff
+-- Compiling architecture a_tristatebuff of tristatebuff
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/forwardingUnit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/forwardingUnit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity forwardingUnit
+-- Compiling architecture forwardUnit of forwardingUnit
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/counterINT.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/counterINT.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity counterINT
+-- Compiling architecture Behavioral of counterINT
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_partC.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/alu_partC.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity alu_partC
+-- Compiling architecture alu_partC_arch of alu_partC
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/mux2_1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/mux2_1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2_1
+-- Compiling architecture mux2_1_a of mux2_1
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Decode
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(16): (vcom-1294) Declaration with designator "rtype_cu" already exists in this region.
+** =====> Prior declaration of "rType_cu" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(8).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(32): (vcom-1294) Declaration with designator "IN_OR_LDM_cu" already exists in this region.
+** =====> Prior declaration of "IN_OR_LDM_cu" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(8).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(32): (vcom-1294) Declaration with designator "LDM_cu" already exists in this region.
+** =====> Prior declaration of "LDM_cu" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(8).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(42): (vcom-1294) Declaration with designator "rType_ID_IE" already exists in this region.
+** =====> Prior declaration of "rtype_ID_IE" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(22).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(42): (vcom-1294) Declaration with designator "LDM_ID_IE" already exists in this region.
+** =====> Prior declaration of "LDM_ID_IE" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(33).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(42): (vcom-1294) Declaration with designator "IN_OR_LDM_ID_IE" already exists in this region.
+** =====> Prior declaration of "IN_OR_LDM_ID_IE" is at C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(33).
+** Error: C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decode.vhd(43): VHDL Compiler exiting
+
+} {7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/my_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/my_adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_adder
+-- Compiling architecture a_my_adder of my_adder
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decoder_8.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/micrprocessorPipeLine/Decoder_8.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5c Compiler 2017.01 Jan 23 2017
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_dec8
+-- Compiling architecture a_my_dec8 of my_dec8
+
+} {} {}}

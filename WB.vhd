@@ -2,12 +2,13 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-entity WB IS
+entity  WB IS
 	port (	clk,rst: in std_logic ;
-		Mem_Result,Exec_ResH,Immediate,In_Port,Rdst_buf_IM_IW: in std_logic_vector(15 downto 0);
+		 Mem_Result,Exec_ResH,Immediate,in_port_IM_IW,Rdst_buf_IM_IW: in std_logic_vector(15 downto 0);
 		S1_WB,S0_WB,Out_en_Reg: in std_logic;
 		Write_Data_Rdst,OUT_Port: out std_logic_vector(15 downto 0)
 		);
+
 END WB;
 
 
@@ -33,7 +34,7 @@ END component;
 
 begin 
 
-mux_WB: mux4 generic map (m=>16) port map (S1_WB,S0_WB,Mem_Result,Exec_ResH,Immediate,In_Port,Write_Data_Rdst);
+mux_WB: mux4 generic map (m=>16) port map (S1_WB,S0_WB,Mem_Result,Exec_ResH,Immediate,in_port_IM_IW,Write_Data_Rdst);
 
 R_OUT_PORT : my_nDFF generic map (n=>16) port map (clk,rst,Out_en_Reg,Rdst_buf_IM_IW,OUT_Port);
 

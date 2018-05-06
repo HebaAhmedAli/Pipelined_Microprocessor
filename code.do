@@ -32,11 +32,9 @@ add wave -position 3  sim:/pipeline/f/pc_mux1/s
 add wave -position 3  sim:/pipeline/f/pc_mux2/s
 add wave -position 4 sim:/pipeline/f/pc_mux3/s
 add wave -position 3  sim:/pipeline/CU/offsetSel
-add wave -position 4  sim:/pipeline/f/pc_mux4/s
-add wave -position 4  sim:/pipeline/f/pc_mux5/s
-add wave -position end  sim:/pipeline/IN_OR_LDM_cu_sig
+
 add wave -position end  sim:/pipeline/LDM_cu_sig
-add wave -position end  sim:/pipeline/IN_OR_LDM_ID_IE_sig
+
 add wave -position end  sim:/pipeline/LDM_ID_IE_sig
 add wave -position 12  sim:/pipeline/D/R0/enb
 add wave -position 14  sim:/pipeline/D/R1/enb
@@ -45,12 +43,5 @@ force -freeze sim:/pipeline/Clk 0 0, 1 {50 ps} -r 100
 force -freeze sim:/pipeline/Rst 1 0
 run
 force -freeze sim:/pipeline/Rst 0 0
-run
-run
-run
-run
-run
-run
-run
 run
 

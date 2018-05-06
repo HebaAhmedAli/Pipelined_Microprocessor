@@ -7,7 +7,8 @@ GENERIC ( n : integer := 16);
         twoOp,incSp,enSP ,enMemWr,lddORpop,setcORclrc,
         imm,wrEnRdst,enExecRes,wrEnRsrc,outEnReg,
         alu1,alu2,alu3,alu4,s1Wb,s0Wb,
-        rType,RET,RTI,PUSH,STD,SETC,CLRC,memRead,IN_OR_LDM_out,LDM_out,writeEnrDst_ecxept_LDM_IN,IN_out,POP : OUT std_logic);    -- feryal added  IN_OR_LDM_out,LDM_out
+        rType,RET,RTI,PUSH,STD,SETC,CLRC,memRead,IN_OR_LDM_out,LDM_out,writeEnrDst_ecxept_LDM_IN,IN_out,POP,LDD_out : OUT std_logic);    -- feryal added  IN_OR_LDM_out,LDM_out
+
 END ENTITY irSignals;
 
 
@@ -25,7 +26,7 @@ constant shrOp :std_logic_vector(6 downto 0):= "0011001";
 constant mulOp :std_logic_vector(6 downto 0):= "0011100";
 
 --signal jmpCond :std_logic;
-constant jzOp :std_logic_vector(6 downto 0):= "0000000";
+constant jzOp :std_logic_vector(6 downto 0):= "0000110";
 constant jnOp :std_logic_vector(6 downto 0):= "0000001";
 constant jcOp :std_logic_vector(6 downto 0):= "0000010";
 
@@ -48,7 +49,7 @@ constant ldmOp :std_logic_vector(6 downto 0):=  "0110010";
 --signal wrEnRdst,enExecRes,wrEnRsrc,memRead,outEnReg :std_logic;
 constant inOp :std_logic_vector(6 downto 0):=  "0110000";
 constant outOp :std_logic_vector(6 downto 0):= "0110001";
-constant nopOp :std_logic_vector(6 downto 0):= "0000110";
+constant nopOp :std_logic_vector(6 downto 0):= "0000000";
 
 signal tempIncSP,tempEnSP,tempOutEnReg:std_logic;
 
@@ -59,6 +60,9 @@ signal wrEnRdst_temp: std_logic;
 BEGIN
 
 ---------------------------- feryal -------------------------------------
+
+	LDD_out <= '1' when IRBuff(15 downto 9) =lddOp
+		else '0';
 	SHLopcode <= (not IRBuff(15) )and (not IRBuff(14) ) and  IRBuff(13) and IRBuff(12) and not IRBuff(11) 
 			and not IRBuff(10) and not IRBuff(9);
 

@@ -6,10 +6,10 @@ use ieee.std_logic_unsigned.all;
 entity execute is
 generic ( n : integer := 16);  
 
-PORT ( Clk,RESET,mem_read_in,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_buf_sig,en_exec_result_sig: in std_logic;
+PORT ( Clk,RESET,pop_ID_IE,LDM_ID_IE,LDD_ID_IE,in_ID_IE,IN_OR_LDM_ID_IE,mem_read_in,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_buf_sig,en_exec_result_sig: in std_logic;
 
 	
-	Rdst_buf_in,Rsrc_buf_in,immediate_val_in: in std_logic_vector(n-1 downto 0); --pass it also 
+	in_port_ID_IE,Rdst_buf_in,Rsrc_buf_in,immediate_val_in: in std_logic_vector(n-1 downto 0); --pass it also 
 	ALU_op_ctrl: in std_logic_vector (3 downto 0); --pass immediate_val also
 	flags_reg : out std_logic_vector (3 downto 0);
 	-------------------------------------------------------------
@@ -34,9 +34,11 @@ PORT ( Clk,RESET,mem_read_in,RTI_sig,SETC_sig,CLRC_sig,SETC_or_CLRC_sig,en_flag_
 	execute_result_H_IE_IM,execute_result_L_IE_IM : out std_logic_vector(n-1 downto 0);
 	flags_IE_IM: out std_logic_vector (3 downto 0);
 	RTI_ID_IE,RET_ID_IE : in std_logic;
-	RTI_IE_IM,RET_IE_IM : out std_logic
+	RTI_IE_IM,RET_IE_IM : out std_logic;
 
-	
+	pop_IE_IM,LDM_IE_IM,LDD_IE_IM,in_IE_IM,IN_OR_LDM_IE_IM:out std_logic;
+	in_port_IE_IM : out std_logic_vector (n-1 downto 0)
+
 
 );
 end entity execute;
@@ -116,6 +118,18 @@ control_sig12: my_DFF generic map (n=>1) port map (Clk,RESET,'1',PUSH_sig,PUSH_I
 control_sig13: my_DFF generic map (n=>1) port map (Clk,RESET,'1',rtype_ID_IE,rtype_IE_IM);
 R_RET : my_DFF port map (Clk,RESET,'1',RET_ID_IE,RET_IE_IM);
 R_RTI : my_DFF port map (Clk,RESET,'1',RTI_ID_IE,RTI_IE_IM);	
+
+
+
+
+
+--R_rtype: my_DFF port map (Clk,RESET,'1',rType_ID_IE,rType_IE_IM);	
+R_pop: my_DFF port map (Clk,RESET,'1',pop_ID_IE,pop_IE_IM);	
+R_LDM: my_DFF port map (Clk,RESET,'1',LDM_ID_IE,LDM_IE_IM);	
+R_LDD: my_DFF port map (Clk,RESET,'1',LDD_ID_IE,LDD_IE_IM);	
+R_in: my_DFF port map (Clk,RESET,'1',in_ID_IE,in_IE_IM);	
+R_in_or_ldm: my_DFF port map (Clk,RESET,'1',IN_OR_LDM_ID_IE,IN_OR_LDM_IE_IM);	
+inn_port: my_nDFF port map(Clk,'0','1',in_port_ID_IE,in_port_IE_IM);
 
 
 
