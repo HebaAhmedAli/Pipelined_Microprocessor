@@ -145,7 +145,7 @@ GENERIC ( n : integer := 16);
         twoOp,incSp,enSP ,enMemWr,lddORpop,setcORclrc,
         imm,wrEnRdst,enExecRes,wrEnRsrc,outEnReg,
         alu1,alu2,alu3,alu4,s1Wb,s0Wb,
-        RET,RTI,PUSH,STD,SETC,CLRC,memRead,rType,IN_OR_LDM_out,LDM_out,writeEnrDst_ecxept_LDM_IN,IN_out,POP,LDD_out: OUT std_logic; --feryal
+        RET,RTI,PUSH,STD,SETC,CLRC,memRead,rType,IN_OR_LDM_out,LDM_out,writeEnrDst_ecxept_LDM_IN,IN_out,POP,LDD_out,Jmp_or_Call: OUT std_logic; --feryal
         counterRTout:OUT std_logic_vector (1 downto 0));    
  END component;
 
@@ -253,6 +253,9 @@ signal in_port_IF_ID_sig,in_port_ID_IE_sig,in_port_IE_IM_sig,in_port_IM_IW_sig:s
 ----------------------- feryaaal -----------------------     
 signal delayJMP_IF_ID_sig :std_logic;
 
+-----------------heba
+signal delayJMP_fu_sig_0,JMP_OR_CALL_cu_sig :std_logic;
+
 
 BEGIN
 
@@ -276,7 +279,7 @@ CU:controlUnit port map(ir_fetch_sig,ir_buf_ID_IF_sig,flag_reg_sig,Clk,Rst,stall
 	imm_cu_sig,write_en_Rdst_CU_sig,en_exec_result_CU_sig,write_en_Rsrc_CU_sig,out_en_reg_CU_sig,
 	ALU_op_ctrl_CU_sig(3),ALU_op_ctrl_CU_sig(2),ALU_op_ctrl_CU_sig(1),ALU_op_ctrl_CU_sig(0),S1_WB_CU_sig,S0_WB_CU_sig,RET_cu_sig,
 	RTI_cu_sig,PUSH_cu_sig,STD_cu_sig,SETC_CU_sig,CLRC_CU_sig,mem_read_CU_sig,rtype_cu_sig,IN_OR_LDM_cu_sig,LDM_cu_sig,writeEnrDst_ecxept_LDM_IN_cu_sig,
-	in_cu_sig,pop_cu_sig,LDD_cu_sig,counter_RT_sig);
+	in_cu_sig,pop_cu_sig,LDD_cu_sig,JMP_OR_CALL_cu_sig,counter_RT_sig);
 
 
 
@@ -288,8 +291,10 @@ in_port_IM_IW_sig,immediate_IM_IW_sig,Clk,Rst,rType_IE_IM_sig,rType_ID_IE_sig,rT
 pop_ID_IE_sig,
 twoOp_cu_sig,mem_read_IE_IM_sig,mem_read_ID_IE_sig,write_en_Rdst_IE_IM_sig,write_en_Rsrc_IM_IW_sig,write_en_Rdst_ID_IE_sig,write_en_Rsrc_IE_IM_sig,
 write_en_Rdst_CU_sig,write_en_Rsrc_CU_sig,Rsrc_buf_FU,Rdst_buf_FU,
-stallLD_fu_sig,Stall_LD_buf_FU_sig,delayJMP_fu_sig);
+stallLD_fu_sig,Stall_LD_buf_FU_sig,delayJMP_fu_sig_0);
 
+
+delayJMP_fu_sig<=delayJMP_fu_sig_0 and JMP_OR_CALL_cu_sig;
 
 D: Decode Generic map (m=>16) port map (Clk,Rst,pop_cu_sig,LDD_cu_sig,in_cu_sig,in_port_IF_ID_sig,ir_buf_ID_IF_sig,write_data_Rdst_WB_sig, Exec_Result_H_IM_IW_sig,ir_fetch_sig,
 	pc_call_ID_IF_sig,Rdst_add_IM_IW_sig, Rsrc_add_IM_IW_sig,write_en_Rsrc_IM_IW_sig,write_en_Rdst_IM_IW_sig,imm_cu_sig,

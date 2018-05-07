@@ -7,7 +7,7 @@ GENERIC ( n : integer := 16);
         twoOp,incSp,enSP ,enMemWr,lddORpop,setcORclrc,
         imm,wrEnRdst,enExecRes,wrEnRsrc,outEnReg,
         alu1,alu2,alu3,alu4,s1Wb,s0Wb,
-        rType,RET,RTI,PUSH,STD,SETC,CLRC,memRead,IN_OR_LDM_out,LDM_out,writeEnrDst_ecxept_LDM_IN,IN_out,POP,LDD_out : OUT std_logic);    -- feryal added  IN_OR_LDM_out,LDM_out
+        rType,RET,RTI,PUSH,STD,SETC,CLRC,memRead,IN_OR_LDM_out,LDM_out,writeEnrDst_ecxept_LDM_IN,IN_out,POP,LDD_out,Jmp_or_Call : OUT std_logic);    -- feryal added  IN_OR_LDM_out,LDM_out
 
 END ENTITY irSignals;
 
@@ -29,7 +29,7 @@ constant mulOp :std_logic_vector(6 downto 0):= "0011100";
 constant jzOp :std_logic_vector(6 downto 0):= "0000110";
 constant jnOp :std_logic_vector(6 downto 0):= "0000001";
 constant jcOp :std_logic_vector(6 downto 0):= "0000010";
-
+constant jmpOp :std_logic_vector(6 downto 0):= "0000011";
 --signal incSp :std_logic;
 constant retOp :std_logic_vector(6 downto 0):= "0100000";
 constant rtiOp :std_logic_vector(6 downto 0):= "0100001";
@@ -148,6 +148,11 @@ BEGIN
     or IRBuff(15 downto 13) = addOp(6 downto 4)
     else '0';
 
+--heba
+
+    Jmp_or_Call <= '1' when IRBuff(15 downto 9) = callOp
+    or IRBuff(15 downto 9) = jmpOp
+    else '0';
 ------------------------ feryal -------------------------
 	IN_OR_LDM <= (not IRBuff(15) and IRBuff(14) and IRBuff(13)) and ( (not IRBuff(12) and not  IRBuff(11) and not IRBuff(10) and not IRBuff(9))
 									   or (not IRBuff(12) and not  IRBuff(11) and  IRBuff(10) and not IRBuff(9)) );
